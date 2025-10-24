@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro • Fluxo Fácil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="nav">
+        <div class="container nav__inner">
+          <a class="nav__brand" href="index.html">
+            <span class="logo">FF</span>
+            Fluxo Fácil
+          </a>
+          <nav class="nav__links" aria-label="Principal">
+            <a href="index.html#beneficios">Funcionalidades</a>
+            <a href="precos.html">Planos</a>
+            <a href="app-mobile.html">App</a>
+            <a href="suporte.html">Suporte</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="container" style="padding: 4rem 0;">
+        <div class="section__header">
+          <span class="badge">Você está a 3 passos de organizar sua vida financeira</span>
+          <h1 class="section__title">Crie sua conta em menos de 2 minutos</h1>
+          <p class="section__subtitle">
+            Acesso imediato ao plano Pro por 30 dias, Pix Automático ilimitado e e-book gratuito com checklist financeiro para MEIs.
+          </p>
+        </div>
+        <div class="grid" style="gap: 3rem;">
+          <form class="card" style="max-width: 480px;">
+            <h2 class="card__title">Comece agora</h2>
+            <p class="card__text">Preencha seus dados ou entre com Google / Apple.</p>
+            <div class="grid" style="gap: 1rem; margin-top: 1.5rem;">
+              <label>
+                <span class="card__text" style="font-weight: 600;">Nome completo</span>
+                <input
+                  type="text"
+                  placeholder="Ex.: Ana Pereira"
+                  required
+                  style="width: 100%; padding: 0.85rem 1rem; border-radius: var(--radius-md); border: 1px solid rgba(148, 163, 184, 0.4); margin-top: 0.35rem;"
+                />
+              </label>
+              <label>
+                <span class="card__text" style="font-weight: 600;">E-mail</span>
+                <input
+                  type="email"
+                  placeholder="nome@empresa.com"
+                  required
+                  style="width: 100%; padding: 0.85rem 1rem; border-radius: var(--radius-md); border: 1px solid rgba(148, 163, 184, 0.4); margin-top: 0.35rem;"
+                />
+              </label>
+              <label>
+                <span class="card__text" style="font-weight: 600;">Senha</span>
+                <input
+                  type="password"
+                  placeholder="Crie uma senha segura"
+                  required
+                  style="width: 100%; padding: 0.85rem 1rem; border-radius: var(--radius-md); border: 1px solid rgba(148, 163, 184, 0.4); margin-top: 0.35rem;"
+                />
+              </label>
+            </div>
+            <div class="hero__cta" style="margin-top: 1.75rem;">
+              <button class="btn btn--primary" type="submit">Criar conta grátis</button>
+              <button class="btn btn--ghost" type="button">Entrar com Google</button>
+              <button class="btn btn--ghost" type="button">Entrar com Apple</button>
+            </div>
+            <p class="card__text" style="font-size: 0.85rem; margin-top: 1.5rem;">
+              Ao continuar, você concorda com nossa <a href="suporte.html#termos" style="color: var(--accent);">Política de Privacidade</a> e
+              autoriza comunicações por e-mail e WhatsApp.
+            </p>
+          </form>
+
+          <div class="card" style="display: grid; gap: 2rem;">
+            <h2 class="card__title">Onboarding guiado</h2>
+            <p class="card__text">
+              A cada etapa você entende por que pedimos consentimento e como usar o Pix Automático com segurança.
+            </p>
+            <div class="progress" aria-hidden="true">
+              <div class="progress__bar"></div>
+            </div>
+            <div class="stepper">
+              <div class="step" data-step="1">
+                <h3 class="card__title" style="font-size: 1.125rem;">Conecte suas contas via Open Finance</h3>
+                <p class="card__text">
+                  Escolha seu banco parceiro e autorize o compartilhamento de dados. Explicamos quais dados serão acessados e por quanto tempo.
+                </p>
+              </div>
+              <div class="step" data-step="2">
+                <h3 class="card__title" style="font-size: 1.125rem;">Ative o Pix Automático</h3>
+                <p class="card__text">
+                  Configure autorizações no PSP de sua preferência e cadastre os primeiros pagamentos. Tudo com autenticação em duas etapas.
+                </p>
+              </div>
+              <div class="step" data-step="3">
+                <h3 class="card__title" style="font-size: 1.125rem;">Monte sua reserva inteligente</h3>
+                <p class="card__text">
+                  Defina objetivos, percentuais de aporte e receba recomendações da IA personalizadas com base nas suas entradas e saídas.
+                </p>
+              </div>
+            </div>
+            <div class="toast">
+              <span class="toast__icon">🔔</span>
+              <div>
+                <strong>Você está a 3 passos</strong>
+                <p class="card__text" style="margin: 0;">Complete o fluxo em menos de 8 minutos e receba o e-book exclusivo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__bottom">
+            <span>Precisa de ajuda? Acesse o <a href="suporte.html" style="color: #cbd5f5;">Centro de Suporte</a>.</span>
+            <span>© 2024 Fluxo Fácil</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
