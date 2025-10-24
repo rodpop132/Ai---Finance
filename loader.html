@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fluxo Fácil • Carregando com segurança</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="loader page">
+      <div class="loader__shell" role="status" aria-live="polite">
+        <div class="loader__content">
+          <div class="vault">
+            <div class="vault__icon">&#128274;</div>
+          </div>
+          <h1 class="section__title" style="text-align:center;">Carregando seus dados com segurança…</h1>
+          <div class="loader__progress" aria-hidden="true">
+            <span></span>
+          </div>
+          <p class="microcopy" data-rotate="true">
+            Analisando suas despesas com IA…
+          </p>
+          <div class="status-list">
+            <span class="status">Conectando a Open Finance</span>
+            <span class="status">Sincronizando seus bancos e cartões</span>
+            <span class="status status--done">Pronto! Ajustando seu dashboard</span>
+          </div>
+        </div>
+        <div class="skeleton skeleton--wide" style="margin-top:2rem;" aria-hidden="true"></div>
+        <div class="skeleton" style="width:70%;margin-top:0.75rem;" aria-hidden="true"></div>
+        <div class="skeleton" style="width:55%;margin-top:0.5rem;" aria-hidden="true"></div>
+      </div>
+      <noscript>
+        <p style="color:var(--text);max-width:420px;text-align:center;margin-top:1.5rem;">
+          Carregando seus dados com segurança. Ative o JavaScript para visualizar as animações do loader.
+        </p>
+      </noscript>
+    </div>
+  </body>
+</html>

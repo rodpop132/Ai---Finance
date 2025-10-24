@@ -3,11 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fluxo Fácil • Automação financeira via Pix</title>
+    <title>Fluxo Fácil • Use IA para salvar o seu dinheiro</title>
+    <meta
+      name="description"
+      content="Automatize contas com Pix, crie reservas inteligentes e use IA para proteger seu caixa. Agende pagamentos, organize seu mês e nunca mais perca prazos."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -20,164 +24,156 @@
             <span class="logo">FF</span>
             Fluxo Fácil
           </a>
-          <nav class="nav__links" aria-label="Principal">
+          <nav class="nav__links" aria-label="Navegação principal">
             <a href="#dor-solucao">Solução</a>
             <a href="#beneficios">Funcionalidades</a>
             <a href="#planos">Planos</a>
-            <a href="#faq">FAQ</a>
-            <a href="precos.html">Preços</a>
-            <a href="cadastro.html" class="btn btn--primary">Experimente Grátis</a>
+            <a href="#faq">Perguntas</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a class="btn btn--primary" href="cadastro.html">Experimente Grátis</a>
           </nav>
         </div>
       </header>
 
       <main>
         <section class="hero container" id="inicio">
-          <div class="hero__content">
-            <div class="badge">
-              <span aria-hidden="true">&#128640;</span>
-              Vagas limitadas para os 500 primeiros MEIs
-            </div>
-            <h1 class="hero__title">Organize seus pagamentos e construa sua reserva sem esforço</h1>
+          <div class="hero__heading" data-reveal="true">
+            <span class="badge">Use IA para salvar o seu dinheiro</span>
+            <h1 class="hero__title">Organize seus pagamentos e construa sua reserva sem esforço.</h1>
             <p class="hero__subtitle">
-              Agende contas via Pix Automático, acompanhe um calendário financeiro inteligente e receba recomendações personalizadas para nunca mais perder prazos.
+              Agende via Pix, automatize sua reserva e deixe a IA encontrar desperdícios. Controle o fluxo de caixa,
+              evite multas e mantenha sua saúde financeira sempre no azul.
             </p>
             <div class="hero__cta">
-              <a class="btn btn--primary" href="cadastro.html">Experimente Grátis</a>
-              <a class="btn btn--ghost" href="precos.html">Veja os Planos</a>
+              <a class="btn btn--primary" href="cadastro.html" data-motion="cta">Experimente Grátis</a>
+              <a class="btn btn--ghost" href="dashboard.html">Ver demo</a>
             </div>
-            <div class="stats" role="list">
-              <div class="stat" role="listitem">
-                <span class="stat__value">87%</span>
-                <p class="card__text">
-                  dos adultos no Brasil já usam Pix <span style="color: var(--text-muted);">&bull; Banco Central</span>
-                </p>
+            <div class="stats-row">
+              <div class="stat">
+                <div class="stat__value">500</div>
+                <p>Vagas beta com Pro liberado por 30 dias. Não perca mais prazos.</p>
               </div>
-              <div class="stat" role="listitem">
-                <span class="stat__value">96%</span>
-                <p class="card__text">
-                  dos brasileiros adotaram Pix em 2023 <span style="color: var(--text-muted);">&bull; poverty-action.org</span>
-                </p>
+              <div class="stat">
+                <div class="stat__value">96&#37;</div>
+                <p>Uso de Pix no Brasil habilitando o Pix Automático (Fonte: Banco Central).</p>
               </div>
-              <div class="stat" role="listitem">
-                <span class="stat__value">30 dias</span>
-                <p class="card__text">de acesso Pro gratuito para beta testers</p>
+              <div class="stat">
+                <div class="stat__value">R&#36; 420</div>
+                <p>Economia média declarada por MEIs nos 30 primeiros dias.</p>
               </div>
             </div>
           </div>
           <div class="hero__visual" aria-hidden="true">
-            <img
-              src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=900&q=80"
-              alt="Painel financeiro com gráficos"
-            />
+            <div class="float-group">
+              <div class="float" data-animate="true">
+                <h3 style="margin:0;font-family:var(--font-heading);font-size:1rem;">Calendário financeiro</h3>
+                <p style="margin:0;color:var(--text-muted);font-size:0.95rem;">
+                  Seus pagamentos em um calendário inteligente com drag &#38; drop e Pix Automático.
+                </p>
+              </div>
+              <div class="float" data-animate="fast">
+                <h3 style="margin:0;font-family:var(--font-heading);font-size:1rem;">Metas com IA</h3>
+                <p style="margin:0;color:var(--text-muted);font-size:0.95rem;">
+                  IA recomenda aportes para atingir a reserva ideal e alerta sobre gastos acima da média.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
         <section class="section" id="dor-solucao">
           <div class="container">
-            <div class="section__header">
-              <h2 class="section__title">Pare de improvisar suas finanças</h2>
+            <div class="section__header" data-reveal="true">
+              <h2 class="section__title">Multas, esquecimentos e falta de clareza não precisam fazer parte da sua rotina.</h2>
               <p class="section__subtitle">
-                Fluxo Fácil foi criado para quem vive de boleto, Pix e serviços sob demanda. Chega de esquecer vencimentos ou perder oportunidades por falta de planejamento: automatize, visualize e controle tudo em um só lugar.
+                Conecte suas contas, defina metas e deixe a IA trabalhar por você. Acompanhe o mês seguinte antes que ele
+                comece e pare de improvisar com planilhas quebradas.
               </p>
             </div>
             <div class="grid grid--2">
-              <div class="card">
-                <h3 class="card__title">Suas dores, resolvidas</h3>
-                <ul class="list">
-                  <li>
-                    <span class="list__icon">&#9200;</span>
-                    Notificações atrasadas e juros desnecessários por esquecer datas de pagamento.
+              <article class="card" data-reveal="true">
+                <h3>Principais dores dos MEIs</h3>
+                <ul class="feature-list">
+                  <li class="feature-item">
+                    <span class="feature-item__icon">&#128337;</span>
+                    <span>Atraso de contas e multas por falta de lembrete.</span>
                   </li>
-                  <li>
-                    <span class="list__icon">&#128184;</span>
-                    Dificuldade em separar o dinheiro do negócio do dinheiro pessoal.
+                  <li class="feature-item">
+                    <span class="feature-item__icon">&#128200;</span>
+                    <span>Sem visão do mês seguinte para ajustar o caixa.</span>
                   </li>
-                  <li>
-                    <span class="list__icon">&#128202;</span>
-                    Zero visibilidade das despesas futuras ou dos meses com mais saídas.
-                  </li>
-                  <li>
-                    <span class="list__icon">&#128194;</span>
-                    Falta de um histórico organizado para tomar decisões rápidas.
+                  <li class="feature-item">
+                    <span class="feature-item__icon">&#128176;</span>
+                    <span>Reserva que nunca sai do papel e zero disciplina de aportes.</span>
                   </li>
                 </ul>
-              </div>
-              <div class="card">
-                <h3 class="card__title">A solução na prática</h3>
-                <ul class="list">
-                  <li>
-                    <span class="list__icon">&#129302;</span>
-                    Pix Automático agenda cobranças e assinaturas em segundos.
+              </article>
+              <article class="card" data-reveal="true">
+                <h3>Como Fluxo Fácil resolve</h3>
+                <ul class="feature-list">
+                  <li class="feature-item">
+                    <span class="feature-item__icon">&#128177;</span>
+                    <span>Agendamento via Pix Automático para contas e assinaturas recorrentes.</span>
                   </li>
-                  <li>
-                    <span class="list__icon">&#128197;</span>
-                    Calendário financeiro com alertas antes do vencimento.
+                  <li class="feature-item">
+                    <span class="feature-item__icon">&#128197;</span>
+                    <span>Calendário financeiro inteligente com drag &#38; drop e alertas antecipados.</span>
                   </li>
-                  <li>
-                    <span class="list__icon">&#129504;</span>
-                    IA aponta onde economizar, investir e criar reservas.
+                  <li class="feature-item">
+                    <span class="feature-item__icon">&#129302;</span>
+                    <span>IA que encontra desperdícios e mostra onde cortar ou investir.</span>
                   </li>
-                  <li>
-                    <span class="list__icon">&#128274;</span>
-                    Segurança nível bancário e consentimento transparente via Open Finance.
+                  <li class="feature-item">
+                    <span class="feature-item__icon">&#128276;</span>
+                    <span>Notificações proativas no WhatsApp e app móvel (em breve).</span>
                   </li>
                 </ul>
-              </div>
+              </article>
             </div>
           </div>
         </section>
 
         <section class="section" id="beneficios">
           <div class="container">
-            <div class="section__header">
+            <div class="section__header" data-reveal="true">
               <h2 class="section__title">Tudo o que você precisa para dominar o fluxo de caixa</h2>
               <p class="section__subtitle">
-                Combine automação, visão futura e recomendações inteligentes em uma plataforma pensada para autônomos, MEIs e consultores financeiros.
+                Combine automação, visão futura e recomendações inteligentes em uma plataforma sob medida para autônomos e MEIs.
               </p>
             </div>
-            <div class="grid grid--3">
-              <div class="card">
-                <span class="chip" aria-hidden="true">Pix Automático</span>
-                <h3 class="card__title">Agendamentos sem fricção</h3>
-                <p class="card__text">
-                  Cadastre contas fixas, assinaturas e lembretes em poucos cliques. Ative o Pix Automático com parceiros como EBANX e PagBrasil e deixe a plataforma cuidar do restante.
+            <div class="grid grid--2">
+              <article class="card" data-reveal="true">
+                <span class="pill">Pix Automático</span>
+                <h3>Agendamentos e assinaturas</h3>
+                <p>Configure pagamentos recorrentes, confirme mandatos e receba comprovantes em segundos.</p>
+              </article>
+              <article class="card" data-reveal="true">
+                <span class="pill">Calendário mensal</span>
+                <h3>Planejamento com drag &#38; drop</h3>
+                <p>Arraste compromissos, reorganize datas e simule cenários futuros antes de assumir um novo gasto.</p>
+              </article>
+              <article class="card" data-reveal="true">
+                <span class="pill">Chatbot de finanças</span>
+                <h3>Gaste melhor com IA</h3>
+                <p>Faça perguntas naturais e receba orientações práticas: limites de categoria, metas e ações rápidas.</p>
+              </article>
+              <article class="card" data-reveal="true">
+                <span class="pill">Relatórios claros</span>
+                <h3>Entradas, saídas e tags</h3>
+                <p>Visualize gráficos, filtre por categoria e exporte para o contador com um clique.</p>
+              </article>
+            </div>
+            <div class="cta-banner" style="margin-top:3rem;" data-reveal="true">
+              <div>
+                <span class="pill">App móvel em breve</span>
+                <h3 class="cta-banner__title">Receba notificações importantes onde estiver</h3>
+                <p class="cta-banner__text">
+                  Seja avisado na hora sobre vencimentos, metas batidas e oportunidades de economia.
                 </p>
               </div>
-              <div class="card">
-                <span class="chip" aria-hidden="true">Visão 360&deg;</span>
-                <h3 class="card__title">Calendário financeiro</h3>
-                <p class="card__text">
-                  Visual mensal com arrastar e soltar para reorganizar pagamentos futuros, filtrar categorias e antecipar despesas sazonais.
-                </p>
-              </div>
-              <div class="card">
-                <span class="chip" aria-hidden="true">IA aplicada</span>
-                <h3 class="card__title">Chatbot consultivo</h3>
-                <p class="card__text">
-                  Pergunte "posso gastar mais em marketing?" e receba análise baseada nos seus dados. Receba alertas proativos de economia e dicas de investimento.
-                </p>
-              </div>
-              <div class="card">
-                <span class="chip" aria-hidden="true">Analytics</span>
-                <h3 class="card__title">Relatórios inteligentes</h3>
-                <p class="card__text">
-                  Dashboards com gráficos de entradas, saídas e reservas. Identifique tendências, compare períodos e gere PDF para prestação de contas.
-                </p>
-              </div>
-              <div class="card">
-                <span class="chip" aria-hidden="true">Mobile first</span>
-                <h3 class="card__title">Notificações onde estiver</h3>
-                <p class="card__text">
-                  Receba alertas no WhatsApp e push (app em breve) sobre vencimentos, metas atingidas e oportunidades de diminuir gastos.
-                </p>
-              </div>
-              <div class="card">
-                <span class="chip" aria-hidden="true">Reservas</span>
-                <h3 class="card__title">Objetivos automáticos</h3>
-                <p class="card__text">
-                  Defina percentuais para reserva de emergência, férias ou expansão. Acompanhe o crescimento com dicas de aportes semanais.
-                </p>
+              <div class="cta-banner__actions">
+                <a class="btn btn--secondary" href="app-mobile.html">Quero ser avisado</a>
+                <a class="btn btn--ghost" href="loader.html">Ver Loader</a>
               </div>
             </div>
           </div>
@@ -185,153 +181,163 @@
 
         <section class="section" id="prova-social">
           <div class="container">
-            <div class="section__header">
-              <h2 class="section__title">Mais de 1.200 MEIs testando o Pix Automático</h2>
+            <div class="section__header" data-reveal="true">
+              <h2 class="section__title">Prova social: MEIs já organizam o mês com Fluxo Fácil</h2>
               <p class="section__subtitle">
-                Veja como profissionais autônomos estão organizando pagamentos e acelerando reservas com Fluxo Fácil.
+                Mais de 1.200 profissionais participam da versão beta, economizando tempo e evitando atrasos com Pix Automático.
               </p>
             </div>
-            <div class="grid grid--2">
-              <div class="card">
-                <p class="card__text">
-                  "Em 3 meses zerei os juros de atraso e guardei R$ 1.200 na reserva. O calendário visual e as dicas da IA viraram parte da minha rotina."
-                </p>
-                <p class="card__text"><strong>Fernanda Dias</strong>, Designer MEI</p>
+            <div class="carousel" data-reveal="true">
+              <div class="carousel__track">
+                <article class="card">
+                  <p>
+                    "Cancelei duas assinaturas e poupei R&#36; 420 no primeiro mês. As notificações no WhatsApp salvaram a minha agenda."
+                  </p>
+                  <p style="color:var(--text);font-weight:600;">Ana • Designer MEI</p>
+                </article>
+                <article class="card">
+                  <p>
+                    "Meu salão tinha impostos atrasados. Agora tudo sai via Pix Automático no dia certo e consigo ver o mês inteiro em minutos."
+                  </p>
+                  <p style="color:var(--text);font-weight:600;">Bruna • Salão de beleza</p>
+                </article>
+                <article class="card">
+                  <p>
+                    "Organizei estoque, reservei 8&#37; dos recebimentos e a IA me lembra quando o caixa aperta."
+                  </p>
+                  <p style="color:var(--text);font-weight:600;">Carlos • Loja de bolos artesanais</p>
+                </article>
               </div>
-              <div class="card">
-                <p class="card__text">
-                  "Consigo programar pagamentos recorrentes e enviar comprovantes para clientes automaticamente. Nunca mais perdi o prazo de ISS."
-                </p>
-                <p class="card__text"><strong>Caio Ribeiro</strong>, Consultor de TI</p>
+              <div class="carousel__controls">
+                <span style="color:var(--text-muted);font-size:0.9rem;">Economize tempo com Pix Automático recorrente.</span>
               </div>
-              <div class="card">
-                <p class="card__text">
-                  "Fluxo Fácil conectou minhas contas bancárias via Open Finance em minutos. Agora sei qual mês devo segurar gastos e quando posso investir."
-                </p>
-                <p class="card__text"><strong>Aline Souza</strong>, Nutricionista</p>
-              </div>
-              <div class="card">
-                <ul class="list">
-                  <li>
-                    <span class="list__icon">&#128200;</span>
-                    3x mais tempo economizado na gestão financeira mensal.
-                  </li>
-                  <li>
-                    <span class="list__icon">&#128257;</span>
-                    92% dos beta testers ativaram o Pix Automático na primeira semana.
-                  </li>
-                  <li>
-                    <span class="list__icon">&#128737;</span>
-                    Conformidade total com LGPD e auditoria completa de acessos.
-                  </li>
-                </ul>
-              </div>
+            </div>
+            <div class="card" style="margin-top:2.5rem;" data-reveal="true">
+              <h3 style="margin-top:0;">Dados do mercado</h3>
+              <p style="color:var(--text-muted);">
+                Pix atinge adoção massiva no Brasil e habilita pagamentos recorrentes (Pix Automático). Fique pronto para
+                atender clientes que exigem velocidade e sem juros.
+              </p>
+              <p style="font-size:0.85rem;color:var(--text-muted);">
+                <em>Referências: Banco Central, mobileecosystemforum.com, poverty-action.org.</em>
+              </p>
             </div>
           </div>
         </section>
 
         <section class="section" id="planos">
           <div class="container">
-            <div class="section__header">
-              <h2 class="section__title">Escolha o plano ideal para seu momento</h2>
+            <div class="section__header" data-reveal="true">
+              <h2 class="section__title">Planos para cada etapa do seu negócio</h2>
               <p class="section__subtitle">
-                Todos os planos incluem sincronização via Open Finance, criptografia avançada, consentimento auditável e e-book exclusivo de planejamento financeiro.
+                Comece grátis, evolua com IA avançada e automações. Garanta 7 dias de reembolso se não amar.
               </p>
             </div>
+            <div class="table-caption">
+              <h2 style="font-size:1.4rem;">Mensal &#47; Anual (2 meses off)</h2>
+              <div class="toggle" role="group" aria-label="Alternar período">
+                <button type="button" aria-pressed="true">Mensal</button>
+                <button type="button" aria-pressed="false">Anual</button>
+              </div>
+            </div>
             <div class="pricing">
-              <article class="card pricing__plan">
-                <h3 class="card__title">Free</h3>
-                <p class="pricing__price">R$ 0</p>
-                <p class="pricing__tagline">Ideal para começar</p>
+              <article class="card pricing__plan" data-reveal="true">
+                <span class="pill">Free</span>
+                <h3>Plano Free</h3>
+                <p class="price">R&#36; 0</p>
+                <p class="price__period">ou R&#36; 0 anual</p>
                 <ul class="list">
-                  <li><span class="list__icon">&#9989;</span> Até 3 contas conectadas</li>
-                  <li><span class="list__icon">&#9989;</span> 10 agendamentos Pix/mês</li>
-                  <li><span class="list__icon">&#9989;</span> Calendário financeiro básico</li>
-                  <li><span class="list__icon">&#9989;</span> Chatbot com respostas padrão</li>
-                  <li><span class="list__icon">&#10060;</span> Relatórios exportáveis</li>
+                  <li><span class="list__icon">&#9989;</span> 1 conta conectada via Open Finance</li>
+                  <li><span class="list__icon">&#9989;</span> 10 agendamentos Pix &#47; mês</li>
+                  <li><span class="list__icon">&#9989;</span> IA básica com alertas padrão</li>
+                  <li><span class="list__icon">&#9989;</span> Calendário mensal essencial</li>
+                  <li><span class="list__icon list__icon--danger">&#10060;</span> Relatórios exportáveis</li>
                 </ul>
-                <a class="btn btn--ghost" href="cadastro.html">Comece agora</a>
+                <a class="btn btn--ghost" href="cadastro.html">Começar grátis</a>
               </article>
-              <article class="card pricing__plan pricing__plan--highlight">
-                <h3 class="card__title">Pro</h3>
-                <p class="pricing__price">R$ 39/mês</p>
-                <p class="pricing__tagline">Beta testers: 30 dias Pro gratuito</p>
+              <article class="card pricing__plan pricing__plan--highlight" data-reveal="true">
+                <span class="pill">Pro</span>
+                <h3>Plano Pro</h3>
+                <p class="price">R&#36; 39</p>
+                <p class="price__period">ou R&#36; 390 anual (2 meses grátis)</p>
                 <ul class="list">
-                  <li><span class="list__icon">&#9989;</span> Contas ilimitadas</li>
-                  <li><span class="list__icon">&#9989;</span> Pix Automático ilimitado</li>
-                  <li><span class="list__icon">&#9989;</span> IA personalizada por categoria</li>
-                  <li><span class="list__icon">&#9989;</span> Relatórios em PDF/CSV</li>
-                  <li><span class="list__icon">&#9989;</span> Suporte prioritário via WhatsApp</li>
+                  <li><span class="list__icon">&#9989;</span> 3 contas + cartões ilimitados</li>
+                  <li><span class="list__icon">&#9989;</span> 100 agendamentos Pix &#47; mês</li>
+                  <li><span class="list__icon">&#9989;</span> IA avançada com recomendações</li>
+                  <li><span class="list__icon">&#9989;</span> Relatórios PDF &#47; CSV &#47; integrações</li>
+                  <li><span class="list__icon">&#9989;</span> Suporte prioritário WhatsApp</li>
                 </ul>
-                <a class="btn btn--primary" href="cadastro.html">Teste gratuitamente</a>
+                <a class="btn btn--secondary" href="cadastro.html">Quero organizar meu mês</a>
               </article>
-              <article class="card pricing__plan">
-                <h3 class="card__title">Ultra</h3>
-                <p class="pricing__price">R$ 69/mês</p>
-                <p class="pricing__tagline">Para consultorias e equipes</p>
+              <article class="card pricing__plan" data-reveal="true">
+                <span class="pill">Ultra</span>
+                <h3>Plano Ultra</h3>
+                <p class="price">R&#36; 69</p>
+                <p class="price__period">ou R&#36; 690 anual (2 meses grátis)</p>
                 <ul class="list">
-                  <li><span class="list__icon">&#9989;</span> Subcontas para equipe</li>
-                  <li><span class="list__icon">&#9989;</span> Automação via Webhooks Pix</li>
-                  <li><span class="list__icon">&#9989;</span> Projetos ilimitados de metas</li>
-                  <li><span class="list__icon">&#9989;</span> IA avançada com recomendações de crédito</li>
-                  <li><span class="list__icon">&#9989;</span> Executivo de sucesso dedicado</li>
+                  <li><span class="list__icon">&#9989;</span> Contas ilimitadas &#43; multiusuário</li>
+                  <li><span class="list__icon">&#9989;</span> Regras avançadas e webhooks Pix</li>
+                  <li><span class="list__icon">&#9989;</span> Metas ilimitadas com IA preditiva</li>
+                  <li><span class="list__icon">&#9989;</span> Exportações contábeis &#43; API</li>
+                  <li><span class="list__icon">&#9989;</span> Gerente de sucesso dedicado</li>
                 </ul>
-                <a class="btn btn--ghost" href="cadastro.html">Fale com vendas</a>
+                <a class="btn btn--ghost" href="mailto:vendas@fluxofacil.co">Falar com vendas</a>
               </article>
             </div>
-            <div class="card" style="margin-top: 2.5rem;">
-              <h3 class="card__title">Perguntas rápidas sobre planos</h3>
-              <ul class="list">
-                <li>
-                  <span class="list__icon">&#128179;</span>
-                  Pagamento mensal ou anual com 2 meses de desconto. Cancelamento com 1 clique.
-                </li>
-                <li>
-                  <span class="list__icon">&#127873;</span>
-                  Beta testers recebem e-book "Checklist Financeiro do MEI" ao concluir o cadastro.
-                </li>
-                <li>
-                  <span class="list__icon">&#128737;</span>
-                  Garantia de reembolso de 7 dias em qualquer plano pago.
-                </li>
-              </ul>
+            <div class="sticky-cta" data-reveal="true">
+              <strong>Economize 3&#215; mais tempo com as automações da IA.</strong>
+              <a class="btn btn--primary" href="cadastro.html">Comece agora</a>
             </div>
           </div>
         </section>
 
         <section class="section" id="faq">
           <div class="container">
-            <div class="section__header">
+            <div class="section__header" data-reveal="true">
               <h2 class="section__title">Perguntas frequentes</h2>
               <p class="section__subtitle">
-                Transparência total sobre segurança, consentimento e uso do Pix Automático. Se não encontrar o que procura, acesse nosso
-                <a href="suporte.html" style="color: var(--accent);">Centro de Suporte</a>.
+                Transparência total sobre LGPD, Pix Automático e cancelamentos. Caso precise de mais detalhes, visite o suporte.
               </p>
             </div>
-            <div class="faq">
-              <div class="faq__item">
-                <h4>Como funciona o Pix Automático?</h4>
-                <p>
-                  Conectamos sua conta via Open Finance e utilizamos integrações com PSPs (EBANX, PagBrasil) para agendar transferências recorrentes. Você aprova cada agendamento e pode pausar quando quiser.
-                </p>
+            <div class="accordion" data-reveal="true">
+              <div class="accordion__item">
+                <button class="accordion__trigger" type="button">
+                  Como funciona o Pix Automático?
+                  <span aria-hidden="true">+</span>
+                </button>
+                <div class="accordion__content">
+                  Conectamos seu banco via Open Finance e criamos mandatos com PSPs parceiros (EBANX, PagBrasil). Você aprova
+                  cada agendamento, pode pausar a qualquer momento e recebe comprovante automático.
+                </div>
               </div>
-              <div class="faq__item">
-                <h4>Meus dados estão protegidos?</h4>
-                <p>
-                  Sim. Aplicamos criptografia ponta a ponta, autenticação OAuth 2.0 e logs de auditoria com histórico de consentimento. Somos 100% aderentes à LGPD e só acessamos dados autorizados.
-                </p>
+              <div class="accordion__item">
+                <button class="accordion__trigger" type="button">
+                  Meus dados estão protegidos?
+                  <span aria-hidden="true">+</span>
+                </button>
+                <div class="accordion__content">
+                  Sim. Usamos OAuth, criptografia em repouso e trânsito, logs de auditoria e consentimento revogável. Cumprimos
+                  a LGPD e só acessamos dados autorizados.
+                </div>
               </div>
-              <div class="faq__item">
-                <h4>Qual é o período de teste?</h4>
-                <p>
-                  Cadastros novos têm 30 dias gratuitos no plano Pro. Antes do vencimento avisamos por e-mail e WhatsApp para você escolher manter, migrar ou cancelar.
-                </p>
+              <div class="accordion__item">
+                <button class="accordion__trigger" type="button">
+                  Existe período de teste?
+                  <span aria-hidden="true">+</span>
+                </button>
+                <div class="accordion__content">
+                  Sim. Liberamos o plano Pro gratuitamente por 30 dias para os 500 primeiros cadastros beta.
+                </div>
               </div>
-              <div class="faq__item">
-                <h4>Posso cancelar quando quiser?</h4>
-                <p>
-                  Pode. Basta acessar configurações e clicar em "Cancelar Assinatura". O acesso permanece ativo até o fim do ciclo contratado, com reembolso proporcional nos primeiros 7 dias.
-                </p>
+              <div class="accordion__item">
+                <button class="accordion__trigger" type="button">
+                  Como cancelar?
+                  <span aria-hidden="true">+</span>
+                </button>
+                <div class="accordion__content">
+                  Basta abrir Configurações &#62; Plano e solicitar cancelamento. O acesso permanece até o fim do ciclo e há
+                  reembolso integral em até 7 dias.
+                </div>
               </div>
             </div>
           </div>
@@ -339,16 +345,16 @@
 
         <section class="section">
           <div class="container">
-            <div class="cta-banner">
+            <div class="cta-banner" data-reveal="true">
               <div>
-                <h3 class="cta-banner__title">Nunca mais perca um pagamento</h3>
+                <h3 class="cta-banner__title">Nunca mais perca um pagamento.</h3>
                 <p class="cta-banner__text">
-                  Garanta seu acesso entre os primeiros 500 usuários e desbloqueie o plano Pro por 30 dias com Pix Automático ilimitado.
+                  Vagas limitadas para 500 MEIs com acesso Pro gratuito por 30 dias. Garanta seu lugar e ative o Pix Automático agora.
                 </p>
               </div>
               <div class="cta-banner__actions">
-                <a class="btn btn--white" href="cadastro.html">Criar conta gratuita</a>
-                <a class="btn btn--ghost" style="color: #fff;" href="precos.html">Comparar planos</a>
+                <a class="btn btn--primary" href="cadastro.html">Ativar Pix Automático</a>
+                <a class="btn btn--ghost" href="precos.html">Comparar planos</a>
               </div>
             </div>
           </div>
@@ -358,45 +364,48 @@
       <footer class="footer">
         <div class="container">
           <div class="footer__top">
-            <div class="footer__brand">
+            <div>
               <a class="nav__brand" href="index.html">
                 <span class="logo">FF</span>
                 Fluxo Fácil
               </a>
-              <p>
-                Automação financeira para autônomos e MEIs, com Pix Automático, IA e Open Finance para turbinar seu negócio.
+              <p style="color:var(--text-muted);max-width:280px;">
+                Automatize pagamentos via Pix, organize seu caixa e use IA para construir reservas de forma contínua.
               </p>
             </div>
             <div>
               <h4>Plataforma</h4>
               <div class="footer__links">
-                <a href="cadastro.html">Cadastro / Onboarding</a>
+                <a href="cadastro.html">Cadastro</a>
                 <a href="dashboard.html">Dashboard</a>
-                <a href="precos.html">Planos e Preços</a>
-                <a href="app-mobile.html">App Móvel</a>
+                <a href="precos.html">Planos</a>
+                <a href="app-mobile.html">App móvel</a>
               </div>
             </div>
             <div>
-              <h4>Suporte</h4>
+              <h4>Recursos</h4>
               <div class="footer__links">
-                <a href="suporte.html">Central de Ajuda</a>
-                <a href="#faq">Perguntas Frequentes</a>
-                <a href="mailto:contato@fluxofacil.co">contato@fluxofacil.co</a>
-                <a href="https://wa.me/5500000000000" target="_blank" rel="noopener">WhatsApp Comercial</a>
+                <a href="loader.html">Loader</a>
+                <a href="#beneficios">Funcionalidades</a>
+                <a href="suporte.html">Suporte</a>
               </div>
             </div>
             <div>
               <h4>Legal</h4>
               <div class="footer__links">
-                <a href="suporte.html#termos">Termos de Uso</a>
-                <a href="suporte.html#privacidade">Política de Privacidade (LGPD)</a>
-                <a href="suporte.html#lgpd">LGPD e Consentimento</a>
+                <a href="suporte.html#termos">Termos de uso</a>
+                <a href="suporte.html#privacidade">Política de privacidade</a>
+                <a href="suporte.html#lgpd">LGPD e consentimento</a>
               </div>
             </div>
           </div>
+          <div class="safety-seal">
+            <strong>Segurança e LGPD</strong>
+            <span>OAuth 2.0 • Criptografia ponta a ponta • Logs de auditoria • Revogação de consentimento a qualquer momento.</span>
+          </div>
           <div class="footer__bottom">
-            <span>© 2024 Fluxo Fácil. Todos os direitos reservados.</span>
-            <span>Construído com segurança bancária e integração Open Finance.</span>
+            <span>© 2024 Fluxo Fácil</span>
+            <span>Pix Automático com IA • Nunca mais perca um pagamento.</span>
           </div>
         </div>
       </footer>

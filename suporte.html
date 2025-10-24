@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Suporte • Fluxo Fácil</title>
+    <title>Fluxo Fácil • Central de Suporte e LGPD</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -20,7 +20,7 @@
             <span class="logo">FF</span>
             Fluxo Fácil
           </a>
-          <nav class="nav__links" aria-label="Principal">
+          <nav class="nav__links" aria-label="Navegação principal">
             <a href="index.html#faq">FAQ</a>
             <a href="#lgpd">LGPD</a>
             <a href="#termos">Termos</a>
@@ -29,25 +29,26 @@
         </div>
       </header>
 
-      <main class="container" style="padding: 4rem 0;">
-        <section class="support-hero">
+      <main class="container" style="padding:clamp(4rem,7vw,5rem) 0;">
+        <section class="support-hero" data-reveal="true">
           <span class="badge">Central de ajuda</span>
-          <h1 class="section__title" style="margin: 1rem 0 0.5rem;">Como podemos ajudar?</h1>
-          <p class="section__subtitle" style="margin: 0 auto; max-width: 640px;">
-            Tire dúvidas sobre Pix Automático, integrações Open Finance, segurança e planos. Nosso time responde em até 15 minutos nos horários comerciais.
+          <h1 class="section__title">Como podemos ajudar?</h1>
+          <p>
+            Tire dúvidas sobre Pix Automático, integrações Open Finance, segurança e planos. Nosso time responde em até 15 minutos
+            (Pro) e 2 horas (Free) nos horários comerciais.
           </p>
-          <div class="hero__cta" style="justify-content: center; margin-top: 2rem;">
+          <div class="hero__cta">
             <a class="btn btn--primary" href="mailto:suporte@fluxofacil.co">Falar com suporte</a>
             <a class="btn btn--ghost" href="https://wa.me/5500000000000" target="_blank" rel="noopener">WhatsApp</a>
             <a class="btn btn--ghost" href="cadastro.html">Abrir ticket</a>
           </div>
         </section>
 
-        <section class="section" style="padding-top: 3rem;">
-          <div class="support-grid">
-            <div class="support-card">
+        <section class="section" style="padding-top:3rem;">
+          <div class="support-grid" data-reveal="true">
+            <article class="card">
               <span class="tag">Documentação</span>
-              <h2 class="card__title">Base de conhecimento</h2>
+              <h2 style="margin-top:0;">Base de conhecimento</h2>
               <ul class="list">
                 <li><span class="list__icon">&#128216;</span> Guia passo a passo do Pix Automático</li>
                 <li><span class="list__icon">&#128268;</span> Conectando bancos via Open Finance</li>
@@ -55,110 +56,170 @@
                 <li><span class="list__icon">&#128200;</span> Leitura de relatórios e gráficos</li>
               </ul>
               <a class="btn btn--ghost" href="#">Acessar documentação</a>
-            </div>
-            <div class="support-card">
+            </article>
+            <article class="card">
               <span class="tag">FAQ</span>
-              <h2 class="card__title">Perguntas populares</h2>
+              <h2 style="margin-top:0;">Perguntas populares</h2>
               <ul class="list">
-                <li><span class="list__icon">&#128184;</span> Como agendar Pix Automático para contas recorrentes?</li>
-                <li><span class="list__icon">&#128101;</span> Posso compartilhar acesso com meu contador?</li>
+                <li><span class="list__icon">&#128184;</span> Agendar Pix Automático para contas recorrentes?</li>
+                <li><span class="list__icon">&#128101;</span> Compartilhar acesso com contador ou equipe?</li>
                 <li><span class="list__icon">&#128242;</span> Quando o app móvel estará disponível?</li>
-                <li><span class="list__icon">&#128257;</span> Como faço upgrade ou downgrade de plano?</li>
+                <li><span class="list__icon">&#128257;</span> Como fazer upgrade ou downgrade?</li>
               </ul>
-              <a class="btn btn--ghost" href="#faq">Ver FAQs completas</a>
-            </div>
-            <div class="support-card">
+              <a class="btn btn--ghost" href="#faq-completo">Ver FAQ completo</a>
+            </article>
+            <article class="card">
               <span class="tag">Suporte</span>
-              <h2 class="card__title">Canais de atendimento</h2>
+              <h2 style="margin-top:0;">Canais de atendimento</h2>
               <ul class="list">
                 <li><span class="list__icon">&#9201;</span> SLA médio: 15 min (Pro), 2h (Free)</li>
-                <li><span class="list__icon">&#128231;</span> E-mail e portal 24/7</li>
+                <li><span class="list__icon">&#128231;</span> E-mail e portal 24&#47;7</li>
                 <li><span class="list__icon">&#128222;</span> Atendimento telefônico para Ultra</li>
-                <li><span class="list__icon">&#129309;</span> Sucesso do cliente dedicado no plano Ultra</li>
+                <li><span class="list__icon">&#129309;</span> Sucesso do cliente dedicado (Ultra)</li>
               </ul>
               <a class="btn btn--ghost" href="precos.html">Conhecer planos</a>
-            </div>
+            </article>
           </div>
         </section>
 
-        <section class="section" id="faq" style="padding-top: 0;">
-          <div class="card">
-            <h2 class="card__title">FAQ detalhado</h2>
-            <div class="faq">
-              <div class="faq__item">
-                <h4>O Pix Automático funciona com qualquer banco?</h4>
-                <p>Trabalhamos com PSPs parceiros (EBANX, PagBrasil) e os principais bancos participantes do Open Finance. Consulte a lista completa na documentação.</p>
+        <section class="section" id="faq-completo" style="padding-top:0;">
+          <article class="card" data-reveal="true">
+            <h2 style="margin-top:0;">FAQ detalhado</h2>
+            <div class="accordion">
+              <div class="accordion__item">
+                <button class="accordion__trigger" type="button">
+                  O Pix Automático funciona com qualquer banco?
+                  <span aria-hidden="true">+</span>
+                </button>
+                <div class="accordion__content">
+                  Trabalhamos com PSPs parceiros (EBANX, PagBrasil) e os principais bancos participantes do Open Finance. Confira a lista atualizada na documentação.
+                </div>
               </div>
-              <div class="faq__item">
-                <h4>Quem pode acessar meus dados?</h4>
-                <p>Somente você e colaboradores com permissão. Cada autorização possui logs de auditoria, CPF/CNPJ e horário de acesso, cumprindo a LGPD.</p>
+              <div class="accordion__item">
+                <button class="accordion__trigger" type="button">
+                  Quem pode acessar meus dados?
+                  <span aria-hidden="true">+</span>
+                </button>
+                <div class="accordion__content">
+                  Apenas você e colaboradores autorizados. Registramos logs de auditoria com CPF/CNPJ e horário de acesso para cumprir a LGPD.
+                </div>
               </div>
-              <div class="faq__item">
-                <h4>Posso exportar relatórios?</h4>
-                <p>Sim. Lembretes em PDF/CSV no plano Pro e integração com BI/ERP no plano Ultra via API.</p>
+              <div class="accordion__item">
+                <button class="accordion__trigger" type="button">
+                  Posso exportar relatórios?
+                  <span aria-hidden="true">+</span>
+                </button>
+                <div class="accordion__content">
+                  Sim. Free consulta via tela, Pro exporta PDF/CSV, Ultra integra com Power BI e API aberta.
+                </div>
               </div>
-              <div class="faq__item">
-                <h4>Como cancelo o serviço?</h4>
-                <p>Acesse Configurações &gt; Plano &gt; Cancelar. Você recebe confirmação imediata e acesso até o fim do ciclo vigente.</p>
+              <div class="accordion__item">
+                <button class="accordion__trigger" type="button">
+                  Como cancelo o serviço?
+                  <span aria-hidden="true">+</span>
+                </button>
+                <div class="accordion__content">
+                  Acesse Configurações &#62; Plano &#62; Cancelar. Você mantém acesso até o fim do ciclo e recebe reembolso proporcional nos primeiros 7 dias.
+                </div>
               </div>
             </div>
-          </div>
+          </article>
         </section>
 
-        <section class="section" id="lgpd" style="padding-top: 0;">
-          <div class="card">
+        <section class="section" id="lgpd" style="padding-top:0;">
+          <article class="card" data-reveal="true">
             <span class="tag">LGPD</span>
-            <h2 class="card__title">Proteção de dados e consentimento</h2>
-            <p class="card__text">
-              Seguimos as melhores práticas de segurança da informação, com criptografia AES-256, segregação de ambientes e controles SOC 2 em andamento.
+            <h2 style="margin-top:0;">Proteção de dados e consentimento</h2>
+            <p style="color:var(--text-muted);">
+              Seguimos as melhores práticas de segurança da informação: criptografia AES-256, segregação de ambientes, SOC 2 em andamento e monitoramento contínuo.
             </p>
             <ul class="list">
-              <li><span class="list__icon">&#128737;</span> Consentimentos com validade máxima de 12 meses, renováveis pelo usuário.</li>
-              <li><span class="list__icon">&#128196;</span> Cadastro automático de logs de acesso para auditorias.</li>
-              <li><span class="list__icon">&#128269;</span> Canal de DPO: <a href="mailto:dpo@fluxofacil.co" style="color: var(--accent);">dpo@fluxofacil.co</a>.</li>
+              <li><span class="list__icon">&#128737;</span> Consentimentos com validade de 12 meses, renováveis pelo usuário.</li>
+              <li><span class="list__icon">&#128196;</span> Logs completos de acesso para auditorias e rastreabilidade.</li>
+              <li><span class="list__icon">&#128269;</span> Canal de DPO: <a href="mailto:dpo@fluxofacil.co" style="color:var(--primary);">dpo@fluxofacil.co</a>.</li>
             </ul>
-            <a class="btn btn--ghost" href="#privacidade">Ver política completa</a>
-          </div>
+          </article>
         </section>
 
-        <section class="section" id="termos" style="padding-top: 0;">
-          <div class="card">
+        <section class="section" id="termos" style="padding-top:0;">
+          <article class="card" data-reveal="true">
             <span class="tag">Legal</span>
-            <h2 class="card__title">Termos de Uso</h2>
-            <p class="card__text">
-              Ao utilizar Fluxo Fácil, você concorda com os termos abaixo. Resumimos os principais pontos:
-            </p>
+            <h2 style="margin-top:0;">Termos de Uso</h2>
             <ul class="list">
               <li><span class="list__icon">&#128204;</span> Uso permitido para pessoas físicas com CNPJ MEI e pequenas empresas.</li>
-              <li><span class="list__icon">&#128179;</span> Cobranças recorrentes informadas com 5 dias de antecedência.</li>
+              <li><span class="list__icon">&#128179;</span> Cobranças recorrentes avisadas com 5 dias de antecedência.</li>
               <li><span class="list__icon">&#129534;</span> Emissão de nota fiscal em todos os planos pagos.</li>
-              <li><span class="list__icon">&#9878;</span> Foro escolhido: São Paulo, SP.</li>
+              <li><span class="list__icon">&#9878;</span> Foro eleito: São Paulo, SP.</li>
             </ul>
             <a class="btn btn--ghost" href="#">Download completo</a>
-          </div>
+          </article>
         </section>
 
-        <section class="section" id="privacidade" style="padding-top: 0;">
-          <div class="card">
+        <section class="section" id="privacidade" style="padding-top:0;">
+          <article class="card" data-reveal="true">
             <span class="tag">Privacidade</span>
-            <h2 class="card__title">Política de Privacidade</h2>
-            <p class="card__text">
-              Detalhamos como coletamos, usamos e protegemos seus dados. Você pode solicitar exclusão completa a qualquer momento.
-            </p>
+            <h2 style="margin-top:0;">Política de Privacidade</h2>
             <ul class="list">
               <li><span class="list__icon">&#129489;&#8205;&#128188;</span> Dados de contato usados apenas para comunicações essenciais e materiais educativos.</li>
               <li><span class="list__icon">&#128450;</span> Dados financeiros processados exclusivamente para análises autorizadas.</li>
               <li><span class="list__icon">&#129529;</span> Exclusão definitiva em até 7 dias úteis após solicitação confirmada.</li>
             </ul>
             <a class="btn btn--ghost" href="#">Ver política completa</a>
+          </article>
+        </section>
+
+        <section class="section" style="padding-top:0;">
+          <div class="copy-grid" data-reveal="true">
+            <article class="copy-block">
+              <h2 style="margin:0;">Prompt base do assistente</h2>
+              <pre><code>Tu és um assistente financeiro do micro-SaaS. Recebes transações categorizadas e metas do utilizador. Objetivo: reduzir gastos desnecessários, evitar atrasos e aumentar a reserva. Responde em tom claro, propondo ações (agendar pagamento, criar meta, ajustar percentuais). Respeita LGPD; nunca expõe dados sensíveis; confirma antes de executar.</code></pre>
+            </article>
+            <article class="copy-block">
+              <h2 style="margin:0;">Ações disponíveis para o bot</h2>
+              <pre><code>create_scheduled_payment({ valor, data, recorrencia, categoria })
+enable_pix_auto({ mandatoId })
+create_saving_goal({ nome, alvo, aporteMensal })
+set_budget_limit({ categoria, valor })</code></pre>
+            </article>
           </div>
+        </section>
+
+        <section class="section" style="padding-top:0;">
+          <article class="copy-block" data-reveal="true">
+            <h2 style="margin:0;">Roteiro de copy (landing)</h2>
+            <ul class="list">
+              <li><span class="list__icon">&#9989;</span> Hero — “Organize seus pagamentos e construa sua reserva sem esforço.”</li>
+              <li><span class="list__icon">&#9989;</span> Dor/Solução — “Multas, esquecimentos e falta de clareza não precisam fazer parte da sua rotina.”</li>
+              <li><span class="list__icon">&#9989;</span> Benefícios — “Pix Automático para nunca mais perder data.” • “Calendário que prevê seu mês.” • “Chatbot que encontra desperdícios.”</li>
+              <li><span class="list__icon">&#9989;</span> Prova social — “Mais de X profissionais já testam a versão beta.”</li>
+              <li><span class="list__icon">&#9989;</span> Planos — “Comece grátis. Pro é para quem quer acelerar.”</li>
+              <li><span class="list__icon">&#9989;</span> App em Breve — “Seja o primeiro a receber notificações importantes onde estiver.”</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="section" style="padding-top:0;">
+          <article class="copy-block" data-reveal="true">
+            <h2 style="margin:0;">Checklist de implementação</h2>
+            <ul class="list">
+              <li><span class="list__icon">&#9989;</span> Tema dark com toggle futuro para light.</li>
+              <li><span class="list__icon">&#9989;</span> Variants Framer em Card, Button, Section.</li>
+              <li><span class="list__icon">&#9989;</span> Loader com Lottie opcional + fallback sem motion.</li>
+              <li><span class="list__icon">&#9989;</span> Calendário drag (dnd-kit ou react-beautiful-dnd).</li>
+              <li><span class="list__icon">&#9989;</span> Wizard de onboarding 3 passos.</li>
+              <li><span class="list__icon">&#9989;</span> Chatbot dock lateral com ações rápidas.</li>
+              <li><span class="list__icon">&#9989;</span> Tabela de planos com toggle mensal/anual.</li>
+              <li><span class="list__icon">&#9989;</span> A11y: roles, aria, foco visível, reduced motion.</li>
+              <li><span class="list__icon">&#9989;</span> SEO: metas, OG, sitemap, robots.</li>
+            </ul>
+          </article>
         </section>
       </main>
 
       <footer class="footer">
         <div class="container">
           <div class="footer__bottom">
-            <span>© 2024 Fluxo Fácil • Suporte oficial</span>
+            <span>© 2024 Fluxo Fácil • Central de suporte</span>
             <span>Atendimento 08h-20h (BRT)</span>
           </div>
         </div>
