@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fluxo Fácil • Cadastro e Onboarding</title>
+    <title>Fluxo Fácil • Cadastro e Onboarding em 3 passos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700&family=Inter:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=20241024" />
+    <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <div class="page">
@@ -21,96 +21,79 @@
             Fluxo Fácil
           </a>
           <nav class="nav__links" aria-label="Navegação principal">
-            <a href="index.html#beneficios">Funcionalidades</a>
+            <a href="index.html#produto">Produto</a>
             <a href="precos.html">Planos</a>
-            <a href="app-mobile.html">App móvel</a>
+            <a href="dashboard.html">Dashboard</a>
             <a href="suporte.html">Suporte</a>
           </nav>
         </div>
       </header>
 
       <main class="container" style="padding:clamp(4rem,6vw,5rem) 0;">
-        <div class="section__header" data-reveal="true">
-          <span class="badge">3 passos para organizar sua vida financeira</span>
-          <h1 class="section__title">Crie sua conta em menos de 2 minutos</h1>
+        <div class="section__header">
+          <span class="badge">Só 3 passos para ativar a automação</span>
+          <h1 class="section__title">Crie sua conta e veja valor em minutos</h1>
           <p class="section__subtitle">
-            Liberamos 30 dias de plano Pro para os 500 primeiros MEIs. Conecte suas contas, ative o Pix Automático e deixe a IA fazer o resto.
+            Fluxo inspirado em Typeform e Asana: simples, conversacional e com transparência sobre consentimento e segurança.
           </p>
         </div>
-        <div class="grid" style="gap:2.5rem;">
-          <form class="card" style="max-width:520px;" data-reveal="true">
-            <h2 style="margin-top:0;">Passo 1 • Criar conta</h2>
-            <p style="color:var(--text-muted);">
-              Informe seus dados ou acesse com Google/Apple. Enviamos e-mail de confirmação e checklist gratuito de planejamento.
-            </p>
-            <label style="display:grid;gap:0.45rem;margin-top:1.5rem;">
+        <div class="grid grid--2">
+          <form class="card" aria-label="Formulário de cadastro">
+            <h2 style="margin:0;">Passo 1 — Criar conta</h2>
+            <p class="section__subtitle">Preencha seus dados ou conecte Google/Apple. Enviamos e-mail de confirmação imediato.</p>
+            <label class="form-field">
               <span>Nome completo</span>
-              <input
-                type="text"
-                name="nome"
-                placeholder="Ex.: Ana Pereira"
-                required
-                style="padding:0.85rem 1rem;border-radius:var(--radius-md);border:1px solid var(--border);background:rgba(17,24,39,0.6);color:var(--text);"
-              />
+              <input type="text" name="nome" placeholder="Ex.: Ana Pereira" required />
             </label>
-            <label style="display:grid;gap:0.45rem;margin-top:1rem;">
+            <label class="form-field">
               <span>E-mail</span>
-              <input
-                type="email"
-                name="email"
-                placeholder="nome@empresa.com"
-                required
-                style="padding:0.85rem 1rem;border-radius:var(--radius-md);border:1px solid var(--border);background:rgba(17,24,39,0.6);color:var(--text);"
-              />
+              <input type="email" name="email" placeholder="nome@empresa.com" required />
             </label>
-            <label style="display:grid;gap:0.45rem;margin-top:1rem;">
+            <label class="form-field">
               <span>Senha</span>
-              <input
-                type="password"
-                name="senha"
-                placeholder="Crie uma senha segura"
-                required
-                style="padding:0.85rem 1rem;border-radius:var(--radius-md);border:1px solid var(--border);background:rgba(17,24,39,0.6);color:var(--text);"
-              />
+              <input type="password" name="senha" placeholder="Crie uma senha segura" required />
             </label>
-            <div class="hero__cta" style="margin-top:1.75rem;">
-              <button class="btn btn--primary" type="submit">Quero organizar meu mês</button>
+            <div class="hero__actions" style="margin-top:1rem;">
+              <button class="btn btn--primary" type="submit">Experimente grátis</button>
               <button class="btn btn--ghost" type="button">Entrar com Google</button>
               <button class="btn btn--ghost" type="button">Entrar com Apple</button>
             </div>
-            <p style="color:var(--text-muted);font-size:0.85rem;margin-top:1.5rem;">
-              Ao continuar, você aceita os <a href="suporte.html#termos" style="color:var(--primary);">Termos</a> e a
-              <a href="suporte.html#privacidade" style="color:var(--primary);">Política de Privacidade</a>. Podemos enviar comunicações importantes por e-mail/WhatsApp.
+            <p class="section__subtitle" style="font-size:0.85rem;">
+              Ao continuar, você concorda com os <a href="suporte.html#termos" style="color:var(--color-primary);">Termos</a> e
+              <a href="suporte.html#privacidade" style="color:var(--color-primary);">Política de Privacidade</a>. Podemos enviar alertas por e-mail/WhatsApp.
             </p>
           </form>
-
-          <div class="card" data-reveal="true">
-            <h2 style="margin-top:0;">Passos seguintes</h2>
-            <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="33">
-              <span class="progress-bar" style="width:33%;"></span>
+          <div class="card">
+            <h2 style="margin:0;">Passos 2 e 3 — Configure em menos de 5 minutos</h2>
+            <div class="progress" role="progressbar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">
+              <span style="width:33%;"></span>
             </div>
-            <div class="stepper" style="margin-top:1.75rem;">
-              <div class="step" data-step="1">
-                <h3>Conceder Open Finance</h3>
-                <p>Explique ao usuário os benefícios (saldo consolidado, visão de despesas e insights). Consentimento válido por 12 meses e revogável.</p>
-              </div>
+            <div class="stepper" style="margin-top:1.5rem;">
               <div class="step" data-step="2">
-                <h3>Conectar PSP Pix</h3>
-                <p>Selecione EBANX, PagBrasil ou outro PSP. Gere o mandato, confirme no app bancário e habilite Pix Automático com autenticação dupla.</p>
+                <h3>Conceder Open Finance</h3>
+                <p class="section__subtitle">
+                  Conecte bancos com OAuth, veja quais dados acessamos e o período de consentimento (renovável em 12 meses).
+                </p>
               </div>
               <div class="step" data-step="3">
-                <h3>Configurar metas e reservas</h3>
-                <p>Escolha objetivo (emergência, férias, expansão), defina porcentagem &#47; valor fixo e visualize prazo estimado com IA.</p>
+                <h3>Configurar primeira automação</h3>
+                <p class="section__subtitle">
+                  Escolha um pagamento recorrente, ative o Pix Automático, defina alertas e veja o calendário atualizado.
+                </p>
               </div>
             </div>
-            <div class="toast" style="margin-top:1.5rem;">
+            <div class="toast">
               <span class="toast__icon">&#9889;</span>
               <div>
-                <strong>Dica do assistente</strong>
-                <p style="margin:0;color:var(--text-muted);">Ative metas para acelerar sua reserva. Podemos sugerir 8&#37; da média mensal.</p>
+                <strong>Dica da IA</strong>
+                <p class="section__subtitle" style="margin:0;">
+                  “Ative metas para acelerar sua reserva. Podemos sugerir reservar 8% do faturamento mensal.”
+                </p>
               </div>
             </div>
-            <p style="color:var(--text-muted);font-size:0.85rem;">Progress bar usa --dur-med com ease-soft. Checkmarks animam com spring stiffness 220.</p>
+            <p class="section__subtitle" style="font-size:0.85rem;">
+              Animações utilizam easing suave e respeitam prefers-reduced-motion, inspirado em Slack e Asana.
+            </p>
           </div>
         </div>
       </main>
@@ -118,8 +101,8 @@
       <footer class="footer">
         <div class="container">
           <div class="footer__bottom">
-            <span>© 2024 Fluxo Fácil</span>
-            <span>Precisa de ajuda? <a href="suporte.html" style="color:var(--primary);">Fale com o suporte</a></span>
+            <span>© 2024 Fluxo Fácil • Onboarding simples e seguro</span>
+            <span>Suporte em até 15 min no plano Pro.</span>
           </div>
         </div>
       </footer>

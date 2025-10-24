@@ -7,10 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700&family=Inter:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=20241024" />
+    <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <div class="page">
@@ -21,7 +21,7 @@
             Fluxo Fácil
           </a>
           <nav class="nav__links" aria-label="Navegação principal">
-            <a href="index.html#beneficios">Funcionalidades</a>
+            <a href="index.html#produto">Produto</a>
             <a href="dashboard.html">Dashboard</a>
             <a href="precos.html">Planos</a>
             <a href="suporte.html">Suporte</a>
@@ -29,80 +29,73 @@
         </div>
       </header>
 
-      <main class="container" style="padding:clamp(4rem,7vw,5rem) 0;">
-        <section class="section__header" data-reveal="true">
-          <span class="badge">Em breve no seu bolso</span>
+      <main class="container" style="padding:clamp(4rem,6vw,5rem) 0;">
+        <div class="section__header">
+          <span class="badge">Em breve no Android e iOS</span>
           <h1 class="section__title">App móvel Fluxo Fácil</h1>
           <p class="section__subtitle">
-            Receba notificações importantes onde estiver. Acompanhe Pix Automático, calendário, chatbot e metas em uma experiência nativa para Android e iOS.
+            Leve automações, calendário e chatbot no bolso. Inspirado em experiências mobile premium como Slack, Shopify POS e Asana.
           </p>
-        </section>
-
-        <section class="card" data-reveal="true">
-          <div style="display:grid;gap:1.5rem;justify-items:center;">
-            <div class="hero__visual" style="width:100%;max-width:620px;">
-              <div class="float-group">
-                <div class="float" data-animate="true">
-                  <h3 style="margin:0;font-family:var(--font-heading);">Dashboard no bolso</h3>
-                  <p style="margin:0;color:var(--text-muted);font-size:0.95rem;">
-                    Consulte saldo, reservas e alertas do assistente com micro-tilt sutil (Framer Motion float variant).
-                  </p>
-                </div>
-                <div class="float" data-animate="fast">
-                  <h3 style="margin:0;font-family:var(--font-heading);">Notificações push</h3>
-                  <p style="margin:0;color:var(--text-muted);font-size:0.95rem;">
-                    Pix Automático aprovado? Receba push com confirmação e proatividade da IA em segundos.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <form class="hero__cta" style="flex-direction:column;align-items:flex-start;max-width:420px;">
-              <label class="sr-only" for="newsletter">Digite seu e-mail</label>
-              <input
-                id="newsletter"
-                type="email"
-                placeholder="Digite seu e-mail"
-                required
-                style="width:100%;padding:0.85rem 1rem;border-radius:var(--radius-md);border:1px solid var(--border);background:rgba(17,24,39,0.6);color:var(--text);"
-              />
-              <button class="btn btn--primary" type="submit" style="margin-top:0.75rem;">Seja o primeiro a receber</button>
-              <p style="color:var(--text-muted);font-size:0.85rem;margin:0.75rem 0 0;">
-                Exclusivo para os primeiros 1.000 usuários beta. Ganhe 50&#37; off no plano Pro por 3 meses.
+        </div>
+        <div class="card">
+          <div class="hero__visual" style="margin:0;">
+            <div class="visual-note">
+              <span class="pill">Notificações push</span>
+              <strong>Receba alertas críticos</strong>
+              <p class="section__subtitle">
+                Avisa quando Pix Automático é aprovado, metas são atingidas ou surge oportunidade de economia.
               </p>
-            </form>
+            </div>
+            <div class="visual-note">
+              <span class="pill">Assinaturas on-the-go</span>
+              <strong>Confirme mandatos por biometria</strong>
+              <p class="section__subtitle">
+                Aprove e pause mandatos com autenticação nativa e logs auditáveis.
+              </p>
+            </div>
           </div>
-        </section>
+          <form class="hero__actions" style="flex-direction:column;align-items:flex-start;margin-top:1.5rem;">
+            <label class="form-field">
+              <span>Digite seu e-mail para receber o convite beta</span>
+              <input type="email" placeholder="nome@email.com" required />
+            </label>
+            <button class="btn btn--primary" type="submit">Quero ser avisado</button>
+            <p class="section__subtitle" style="font-size:0.85rem;">
+              1.000 vagas beta. Garante 50&#37; off no plano Pro por 3 meses assim que o app for lançado.
+            </p>
+          </form>
+        </div>
 
         <section class="section" style="padding-top:3rem;">
-          <div class="grid grid--3" data-reveal="true">
+          <div class="grid grid--3">
             <article class="card">
               <span class="pill">Alertas em tempo real</span>
-              <p style="color:var(--text-muted);">
-                Push notifications sobre vencimentos, Pix Automático e metas. Responda com ações rápidas sem abrir o app completo.
+              <p class="section__subtitle">
+                Push notifications personalizadas e SMS de backup para nunca perder um vencimento.
               </p>
             </article>
             <article class="card">
               <span class="pill">Chatbot por voz</span>
-              <p style="color:var(--text-muted);">
-                Pergunte por voz e receba orientações com segurança. “Agendar luz para dia 05” dispara automação confirmada por biometria.
+              <p class="section__subtitle">
+                Toque para falar com o assistente financeiro, inspirado em Slack AI e Asana Voice.
               </p>
             </article>
             <article class="card">
-              <span class="pill">Pix na palma da mão</span>
-              <p style="color:var(--text-muted);">
-                Aprove e pause mandatos de Pix Automático direto no smartphone. Histórico completo sempre disponível.
+              <span class="pill">Integração total</span>
+              <p class="section__subtitle">
+                Sincronização com app web, Google Calendar e notificações WhatsApp integradas.
               </p>
             </article>
           </div>
         </section>
 
-        <section class="card" data-reveal="true">
-          <h2 style="margin-top:0;">Roadmap do aplicativo</h2>
+        <section class="card">
+          <h2 style="margin:0;">Roadmap público</h2>
           <ul class="list">
-            <li><span class="list__icon">&#128241;</span> Beta fechado Android (Q3 2024) com notificações e calendário compacto.</li>
+            <li><span class="list__icon">&#128241;</span> Beta Android (Q3 2024) com calendário compacto e alertas.</li>
             <li><span class="list__icon">&#127822;</span> Lançamento iOS (Q4 2024) com widgets e atalhos de voz.</li>
-            <li><span class="list__icon">&#128260;</span> Fluxo de aprovação de Pix Automático com dupla verificação e resumo imediato.</li>
-            <li><span class="list__icon">&#128483;</span> Chatbot por voz com insights instantâneos e resumo semanal enviado em áudio.</li>
+            <li><span class="list__icon">&#128260;</span> Aprovação de Pix Automático com dupla verificação.</li>
+            <li><span class="list__icon">&#128483;</span> Chatbot por voz com resumos semanais em áudio.</li>
           </ul>
         </section>
       </main>
@@ -111,7 +104,7 @@
         <div class="container">
           <div class="footer__bottom">
             <span>App móvel em desenvolvimento. Cadastre-se para receber novidades.</span>
-            <a href="cadastro.html" style="color:var(--primary);">Criar conta hoje</a>
+            <a href="cadastro.html" style="color:var(--color-primary);">Criar conta hoje</a>
           </div>
         </div>
       </footer>

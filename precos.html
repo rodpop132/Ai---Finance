@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fluxo Fácil • Planos e Preços</title>
+    <title>Fluxo Fácil • Planos, preços e limites</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700&family=Inter:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=20241024" />
+    <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <div class="page">
@@ -29,142 +29,138 @@
         </div>
       </header>
 
-      <main class="container" style="padding:clamp(4rem,7vw,5.5rem) 0;">
-        <section class="section__header" data-reveal="true">
-          <span class="badge">Economize 3× mais tempo</span>
-          <h1 class="section__title">Planos flexíveis para crescer com automação e IA</h1>
+      <main class="container" style="padding:clamp(4rem,6vw,5.5rem) 0;">
+        <div class="section__header">
+          <span class="badge">Modelo freemium com upgrade claro</span>
+          <h1 class="section__title">Planos para cada estágio do seu micro‑SaaS financeiro</h1>
           <p class="section__subtitle">
-            Todos os planos incluem segurança bancária, consentimento revogável e suporte humano. 7 dias de reembolso se não amar.
+            Free resolve o básico. Pro e Ultra liberam automações ilimitadas, integrações premium e suporte prioritário.
           </p>
-        </section>
+        </div>
 
-        <div class="table-caption" data-reveal="true">
-          <h2 style="font-size:1.4rem;">Escolha o período</h2>
-          <div class="toggle" role="group" aria-label="Alternar período">
+        <div class="cta-banner">
+          <div>
+            <h2 style="margin:0;">Escolha período de cobrança</h2>
+            <p class="section__subtitle">
+              Mensal para testar sem compromisso ou anual com 2 meses de desconto automático.
+            </p>
+          </div>
+          <div class="toggle" role="group" aria-label="Alternar período de preços">
             <button type="button" aria-pressed="true">Mensal</button>
-            <button type="button" aria-pressed="false">Anual (2 meses grátis)</button>
+            <button type="button" aria-pressed="false">Anual (-2 meses)</button>
           </div>
         </div>
 
-        <section class="pricing" data-reveal="true">
+        <div class="grid grid--3" style="margin-top:2.5rem;">
           <article class="card">
             <span class="pill">Free</span>
-            <h2 style="margin-bottom:0.5rem;">Plano Free</h2>
-            <p class="price">R&#36; 0</p>
-            <p class="price__period">1 conta • 10 agendamentos/mês • IA básica</p>
+            <h2 style="margin:0;">R&#36; 0</h2>
+            <p class="section__subtitle">1 conta conectada • 10 agendamentos Pix • IA básica</p>
             <ul class="list">
-              <li><span class="list__icon">&#9989;</span> Conexão Open Finance para 1 conta</li>
-              <li><span class="list__icon">&#9989;</span> 10 agendamentos Pix Automático</li>
-              <li><span class="list__icon">&#9989;</span> Calendário mensal essencial</li>
-              <li><span class="list__icon">&#9989;</span> Chatbot com dicas padrão</li>
-              <li><span class="list__icon list__icon--danger">&#10060;</span> Exportação de relatórios</li>
+              <li><span class="list__icon">&#9989;</span> Consentimento Open Finance para 1 banco</li>
+              <li><span class="list__icon">&#9989;</span> Calendário financeiro essencial</li>
+              <li><span class="list__icon">&#9989;</span> Assistente com respostas padrão</li>
+              <li><span class="list__icon list__icon--danger">&#10060;</span> Exportação e automações ilimitadas</li>
             </ul>
             <a class="btn btn--ghost" href="cadastro.html">Começar grátis</a>
           </article>
-          <article class="card pricing__plan--highlight">
+          <article class="card" style="border-color:rgba(34,197,94,0.55);box-shadow:var(--shadow-md);">
             <span class="pill">Pro</span>
-            <h2 style="margin-bottom:0.5rem;">Plano Pro</h2>
-            <p class="price">R&#36; 39</p>
-            <p class="price__period">3 contas • 100 agendamentos/mês • IA avançada</p>
+            <h2 style="margin:0;">R&#36; 39/mês</h2>
+            <p class="section__subtitle">3 contas • 100 agendamentos • IA avançada</p>
             <ul class="list">
-              <li><span class="list__icon">&#9989;</span> Até 3 contas + cartões ilimitados</li>
-              <li><span class="list__icon">&#9989;</span> 100 agendamentos Pix/mês</li>
-              <li><span class="list__icon">&#9989;</span> Relatórios PDF/CSV + tags</li>
-              <li><span class="list__icon">&#9989;</span> IA avançada com recomendações</li>
-              <li><span class="list__icon">&#9989;</span> Suporte prioritário em 15 min</li>
+              <li><span class="list__icon">&#9989;</span> 3 contas + cartões ilimitados</li>
+              <li><span class="list__icon">&#9989;</span> Pix Automático ilimitado</li>
+              <li><span class="list__icon">&#9989;</span> Relatórios PDF/CSV + integrações via API</li>
+              <li><span class="list__icon">&#9989;</span> Suporte prioritário 15 minutos</li>
+              <li><span class="list__icon">&#9989;</span> Metas e reservas ilimitadas</li>
             </ul>
             <a class="btn btn--secondary" href="cadastro.html">Quero organizar meu mês</a>
           </article>
           <article class="card">
             <span class="pill">Ultra</span>
-            <h2 style="margin-bottom:0.5rem;">Plano Ultra</h2>
-            <p class="price">R&#36; 69</p>
-            <p class="price__period">Ilimitado • automações avançadas • webhooks</p>
+            <h2 style="margin:0;">R&#36; 69/mês</h2>
+            <p class="section__subtitle">Ilimitado • Webhooks Pix • Consultor dedicado</p>
             <ul class="list">
-              <li><span class="list__icon">&#9989;</span> Contas ilimitadas e equipes</li>
-              <li><span class="list__icon">&#9989;</span> Regras de automação avançadas</li>
-              <li><span class="list__icon">&#9989;</span> Webhooks Pix + API aberta</li>
-              <li><span class="list__icon">&#9989;</span> Metas ilimitadas com IA preditiva</li>
-              <li><span class="list__icon">&#9989;</span> Gerente de sucesso dedicado</li>
+              <li><span class="list__icon">&#9989;</span> Subcontas e equipes ilimitadas</li>
+              <li><span class="list__icon">&#9989;</span> Automação avançada + webhooks</li>
+              <li><span class="list__icon">&#9989;</span> Integrações customizadas (ERP, BI)</li>
+              <li><span class="list__icon">&#9989;</span> SLA 2h e gerente de sucesso</li>
             </ul>
             <a class="btn btn--ghost" href="mailto:vendas@fluxofacil.co">Falar com vendas</a>
           </article>
-        </section>
-
-        <section class="card" style="margin-top:3rem;" data-reveal="true">
-          <div class="table-caption" style="margin-bottom:1rem;">
-            <h2>Comparativo completo</h2>
-            <span style="color:var(--text-muted);font-size:0.9rem;">Veja o que muda quando você ativa Pix Automático em escala.</span>
-          </div>
-          <table class="table" aria-label="Tabela comparativa">
-            <thead>
-              <tr>
-                <th>Recurso</th>
-                <th>Free</th>
-                <th>Pro</th>
-                <th>Ultra</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Conexões Open Finance</td>
-                <td>1 conta</td>
-                <td>3 contas</td>
-                <td>Ilimitado</td>
-              </tr>
-              <tr>
-                <td>Agendamentos Pix Automático</td>
-                <td>10/mês</td>
-                <td>100/mês</td>
-                <td>Ilimitado</td>
-              </tr>
-              <tr>
-                <td>Relatórios e exportação</td>
-                <td>-</td>
-                <td>PDF/CSV</td>
-                <td>Power BI &#43; API</td>
-              </tr>
-              <tr>
-                <td>Chatbot com IA</td>
-                <td>Básico</td>
-                <td>Avançado</td>
-                <td>Preditivo + ações automáticas</td>
-              </tr>
-              <tr>
-                <td>Suporte</td>
-                <td>E-mail e chat</td>
-                <td>WhatsApp 15 min</td>
-                <td>Gerente dedicado 2h SLA</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
+        </div>
 
         <section class="section" style="padding-top:3rem;">
-          <div class="grid grid--2" data-reveal="true">
+          <div class="card">
+            <h2 style="margin:0;">Comparativo detalhado</h2>
+            <table class="table" aria-label="Tabela comparativa de funcionalidades">
+              <thead>
+                <tr>
+                  <th>Funcionalidade</th>
+                  <th>Free</th>
+                  <th>Pro</th>
+                  <th>Ultra</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Contas Open Finance</td>
+                  <td>1</td>
+                  <td>3</td>
+                  <td>Ilimitado</td>
+                </tr>
+                <tr>
+                  <td>Agendamentos Pix</td>
+                  <td>10/mês</td>
+                  <td>100/mês</td>
+                  <td>Ilimitado</td>
+                </tr>
+                <tr>
+                  <td>Chatbot com IA</td>
+                  <td>básico</td>
+                  <td>avançado + sugestões contextuais</td>
+                  <td>ações automáticas + API</td>
+                </tr>
+                <tr>
+                  <td>Relatórios e exportação</td>
+                  <td>Visual</td>
+                  <td>PDF/CSV</td>
+                  <td>BI, webhooks e API</td>
+                </tr>
+                <tr>
+                  <td>Suporte</td>
+                  <td>E-mail</td>
+                  <td>WhatsApp (15 min)</td>
+                  <td>Gerente dedicado (2 h)</td>
+                </tr>
+                <tr>
+                  <td>Segurança e logs</td>
+                  <td>LGPD + criptografia</td>
+                  <td>Logs detalhados</td>
+                  <td>Audit trail completo + SSO</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="section" style="padding-top:0;">
+          <div class="grid grid--2">
             <article class="card">
-              <h2 style="margin-top:0;">Bônus exclusivos para beta testers</h2>
+              <h2 style="margin:0;">Bônus para beta testers</h2>
               <ul class="list">
-                <li>
-                  <span class="list__icon">&#127919;</span>
-                  Plano Pro gratuito por 30 dias para os primeiros 500 cadastros.
-                </li>
-                <li>
-                  <span class="list__icon">&#128218;</span>
-                  E-book “Checklist Financeiro do MEI” entregue por e-mail.
-                </li>
-                <li>
-                  <span class="list__icon">&#129309;</span>
-                  Comunidade fechada no WhatsApp com mentores convidados.
-                </li>
+                <li><span class="list__icon">&#127919;</span> Plano Pro gratuito por 30 dias (500 vagas).</li>
+                <li><span class="list__icon">&#128218;</span> E-book “Checklist financeiro do MEI”.</li>
+                <li><span class="list__icon">&#129309;</span> Comunidade fechada no WhatsApp com especialistas.</li>
               </ul>
             </article>
             <article class="card">
-              <h2 style="margin-top:0;">Garantia e segurança</h2>
+              <h2 style="margin:0;">Garantia e segurança</h2>
               <ul class="list">
-                <li><span class="list__icon">&#128272;</span> Autenticação OAuth 2.0 e criptografia de dados sensíveis.</li>
-                <li><span class="list__icon">&#129534;</span> Logs de auditoria e histórico de consentimento completo.</li>
-                <li><span class="list__icon">&#128184;</span> Reembolso integral em até 7 dias sem burocracia.</li>
+                <li><span class="list__icon">&#128272;</span> OAuth, criptografia end‑to‑end, segregação de dados.</li>
+                <li><span class="list__icon">&#129534;</span> Logs de auditoria exportáveis.</li>
+                <li><span class="list__icon">&#128184;</span> Reembolso integral em 7 dias, cancelamento sem atrito.</li>
               </ul>
             </article>
           </div>
@@ -173,21 +169,21 @@
 
       <footer class="footer">
         <div class="container">
-          <div class="cta-banner" style="margin-bottom:2rem;" data-reveal="true">
+          <div class="cta-banner" style="margin-bottom:2rem;">
             <div>
-              <h3 class="cta-banner__title">Pronto para ativar o Pix Automático?</h3>
-              <p class="cta-banner__text">
-                Conecte suas contas, automatize cobranças e use IA para salvar o seu dinheiro. 7 dias de reembolso garantido.
+              <h3>Pronto para automatizar sua vida financeira?</h3>
+              <p class="section__subtitle">
+                Conecte contas, ative Pix Automático e use IA para poupar tempo e dinheiro.
               </p>
             </div>
-            <div class="cta-banner__actions">
+            <div class="hero__actions">
               <a class="btn btn--primary" href="cadastro.html">Experimente grátis</a>
               <a class="btn btn--ghost" href="dashboard.html">Conhecer o dashboard</a>
             </div>
           </div>
           <div class="footer__bottom">
-            <span>© 2024 Fluxo Fácil</span>
-            <span>Dúvidas? <a href="mailto:vendas@fluxofacil.co" style="color:var(--primary);">Fale com vendas</a></span>
+            <span>© 2024 Fluxo Fácil • Planos flexíveis</span>
+            <span>Dúvidas? <a href="mailto:vendas@fluxofacil.co" style="color:var(--color-primary);">Fale com vendas</a></span>
           </div>
         </div>
       </footer>

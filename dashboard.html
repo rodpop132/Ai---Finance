@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fluxo Fácil • Dashboard Inteligente</title>
+    <title>Fluxo Fácil • Dashboard inteligente com IA</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700&family=Inter:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=20241024" />
+    <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <div class="page">
@@ -21,7 +21,7 @@
             Fluxo Fácil
           </a>
           <nav class="nav__links" aria-label="Navegação principal">
-            <a href="index.html#beneficios">Funcionalidades</a>
+            <a href="index.html#produto">Produto</a>
             <a href="precos.html">Planos</a>
             <a href="suporte.html">Suporte</a>
             <a class="btn btn--primary" href="cadastro.html">Atualizar plano</a>
@@ -29,24 +29,27 @@
         </div>
       </header>
 
-      <main class="container" style="padding:clamp(4rem,7vw,5rem) 0;">
-        <section class="section__header" style="margin-bottom:2.5rem;" data-reveal="true">
-          <span class="badge">Dashboard inteligente</span>
-          <h1 class="section__title">Visão completa do seu fluxo financeiro</h1>
+      <main class="container" style="padding:clamp(4rem,6vw,5rem) 0;">
+        <div class="section__header">
+          <span class="badge">Dashboard inspirado em Slack, Shopify e Asana</span>
+          <h1 class="section__title">Visão única do seu fluxo financeiro, com automações e IA</h1>
           <p class="section__subtitle">
-            Tudo sincronizado via Open Finance. Acompanhe saldo, pagamentos agendados, reservas e dicas da IA em tempo real.
+            Cards, gráficos, calendário drag & drop e assistente lateral. Estrutura modular pronta para ser implementada em React/Next.js.
           </p>
-        </section>
+        </div>
 
-        <div class="dashboard-grid" data-reveal="true">
+        <!-- Cards de resumo -->
+        <div class="dashboard-grid">
           <article class="dashboard-card">
-            <span class="dashboard-card__label">Saldo total</span>
-            <span class="dashboard-card__value">R&#36; 18.540,00</span>
-            <p style="color:var(--text-muted);">Consolidado via consentimento Open Finance em 3 contas.</p>
+            <h2 class="dashboard-card__title">Saldo consolidado</h2>
+            <span class="value">R&#36; 18.540</span>
+            <p class="section__subtitle">
+              Dados via Open Finance de 3 bancos + 2 cartões. Atualização automática a cada hora, com logs de consentimento.
+            </p>
           </article>
           <article class="dashboard-card">
-            <span class="dashboard-card__label">Pagamentos agendados (7 dias)</span>
-            <span class="dashboard-card__value">R&#36; 1.094,80</span>
+            <h2 class="dashboard-card__title">Pagamentos agendados (7 dias)</h2>
+            <span class="value">R&#36; 1.094,80</span>
             <table class="table" aria-label="Pagamentos agendados">
               <thead>
                 <tr>
@@ -61,188 +64,165 @@
                   <td>05/11</td>
                   <td>Água e esgoto</td>
                   <td>R&#36; 89,00</td>
-                  <td><span class="chip chip--success">Confirmado</span></td>
+                  <td><span class="chip chip--success">Pix confirmado</span></td>
                 </tr>
                 <tr>
                   <td>07/11</td>
                   <td>Internet corporativa</td>
                   <td>R&#36; 154,90</td>
-                  <td><span class="chip chip--pending">Aguardando Pix</span></td>
+                  <td><span class="chip chip--warning">Aguardando</span></td>
                 </tr>
                 <tr>
                   <td>09/11</td>
                   <td>ISS MEI</td>
                   <td>R&#36; 71,00</td>
-                  <td><span class="chip chip--ghost">Pix Automático</span></td>
+                  <td><span class="chip">Pix automático</span></td>
                 </tr>
               </tbody>
             </table>
           </article>
           <article class="dashboard-card">
-            <span class="dashboard-card__label">Reserva acumulada</span>
-            <span class="dashboard-card__value">R&#36; 8.740,00</span>
-            <p style="color:var(--text-muted);">Meta emergência: 78&#37; concluída. prazo estimado mais 3 meses.</p>
-            <div class="progress-track" aria-hidden="true">
-              <span class="progress-bar" style="width:78%;"></span>
-            </div>
+            <h2 class="dashboard-card__title">Reserva acumulada</h2>
+            <span class="value">R&#36; 8.740</span>
+            <p class="section__subtitle">
+              Meta emergência em 73&#37;. IA recomenda aporte extra de R&#36; 420 este mês para atingir o objetivo 1 mês antes.
+            </p>
+            <div class="progress"><span style="width:73%;"></span></div>
           </article>
           <article class="dashboard-card">
-            <span class="dashboard-card__label">Economia estimada pela IA</span>
-            <span class="dashboard-card__value">R&#36; 420,00</span>
-            <p style="color:var(--text-muted);">
-              Cortando assinaturas duplicadas e ajustando lazer para R&#36; 150, você protege a reserva deste mês.
-            </p>
+            <h2 class="dashboard-card__title">Economia sugerida pela IA</h2>
+            <span class="value">R&#36; 420</span>
             <div class="toast">
               <span class="toast__icon">&#128161;</span>
-              <p style="margin:0;color:var(--text-muted);">
-                Gasto 20&#37; maior em alimentação versus mês passado. Ajuste o teto para R&#36; 520.
+              <p class="section__subtitle" style="margin:0;">
+                “Gastos com alimentação subiram 20&#37;. Reduza entregas em R&#36; 150 e renegocie assinatura premium não utilizada.”
               </p>
             </div>
           </article>
         </div>
 
+        <!-- Visualizações -->
         <section class="section" style="padding-top:3rem;">
-          <div class="grid" style="gap:2rem;">
-            <article class="card" data-reveal="true">
-              <h2 style="margin-top:0;">Evolução mensal</h2>
-              <p style="color:var(--text-muted);">
-                Linhas mostram entradas e saídas. Tooltips exibem variação percentual e dicas (“Gasto +20&#37; em alimentação”). Barras segmentam categorias do mês com filtros customizados.
+          <div class="grid grid--2">
+            <article class="card">
+              <span class="pill">Insights visuais</span>
+              <h2 style="margin:0;">Gráficos de entradas e saídas</h2>
+              <p class="section__subtitle">
+                Utilize área + barras com tooltips (“Você gastou 20% a mais em marketing”). Segue placeholder para implementação no front-end.
               </p>
-              <div style="margin-top:1.5rem;border:1px dashed var(--border);border-radius:var(--radius-lg);padding:2rem;">
-                <p style="color:var(--text-muted);text-align:center;margin:0;">Placeholder gráfico • use AreaChart + BarChart com Framer Motion reveal.</p>
+              <div style="border:1px dashed rgba(40,48,72,0.8);border-radius:var(--radius-md);padding:2rem;text-align:center;">
+                <p class="section__subtitle" style="margin:0;">[Insira aqui seu gráfico com Framer Motion ou Recharts]</p>
               </div>
             </article>
-            <article class="card" data-reveal="true">
-              <h2 style="margin-top:0;">Calendário financeiro</h2>
-              <p style="color:var(--text-muted);">
-                Drag &#38; drop com destaque na célula destino (outline --primary&#47;40). Switch para ativar Pix Automático diretamente no evento elegível.
-              </p>
-              <div class="calendar" style="margin-top:1.5rem;">
-                <div class="calendar__grid">
-                  <div class="calendar__day">
+            <article class="card">
+              <span class="pill">Calendário drag & drop</span>
+              <h2 style="margin:0;">Organize sua semana</h2>
+              <div class="calendar" style="margin-top:1rem;">
+                <div class="calendar-grid">
+                  <div class="day">
                     <strong>Seg 4</strong>
-                    <div class="calendar__events">
-                      <span class="event event--fixed">
-                        Energia <span>R&#36; 240</span>
-                      </span>
-                    </div>
+                    <span class="event">Energia <span>R&#36; 240</span></span>
                   </div>
-                  <div class="calendar__day calendar__day--drag">
+                  <div class="day">
                     <strong>Ter 5</strong>
-                    <div class="calendar__events">
-                      <span class="event event--pix">
-                        Água <span>R&#36; 89</span>
-                      </span>
-                      <span class="event">
-                        Assinatura design <span>R&#36; 34</span>
-                      </span>
-                    </div>
+                    <span class="event event--success">Água <span>R&#36; 89</span></span>
+                    <span class="event">Assinatura design <span>R&#36; 34</span></span>
                   </div>
-                  <div class="calendar__day">
+                  <div class="day">
                     <strong>Qua 6</strong>
-                    <div class="calendar__events">
-                      <span class="event">
-                        Mentoria <span>R&#36; 250</span>
-                      </span>
-                    </div>
+                    <span class="event">Mentoria <span>R&#36; 250</span></span>
                   </div>
-                  <div class="calendar__day">
+                  <div class="day">
                     <strong>Qui 7</strong>
-                    <div class="calendar__events">
-                      <span class="event">
-                        Internet <span>R&#36; 154</span>
-                      </span>
-                    </div>
+                    <span class="event">Internet <span>R&#36; 154</span></span>
                   </div>
-                  <div class="calendar__day">
+                  <div class="day">
                     <strong>Sex 8</strong>
                   </div>
-                  <div class="calendar__day">
+                  <div class="day">
                     <strong>Sáb 9</strong>
-                    <div class="calendar__events">
-                      <span class="event event--pix">
-                        ISS MEI <span>R&#36; 71</span>
-                      </span>
-                    </div>
+                    <span class="event event--success">ISS MEI <span>R&#36; 71</span></span>
                   </div>
-                  <div class="calendar__day">
+                  <div class="day">
                     <strong>Dom 10</strong>
                   </div>
                 </div>
-                <p style="margin-top:1rem;color:var(--text-muted);font-size:0.85rem;">
-                  Tooltips exibem “Arraste para reorganizar sua semana”. Pix Automático usa switch com ícone raio em --secondary.
-                </p>
               </div>
+              <p class="section__subtitle">
+                Use dnd-kit para drag & drop. Ao soltar, aplique outline primário e bounce leve (ease 0.25s). Tooltip: “Arraste para reorganizar sua semana”.
+              </p>
             </article>
           </div>
         </section>
 
+        <!-- Assistente e Metas -->
         <section class="section" style="padding-top:0;">
-          <div class="grid" style="gap:2rem;">
-            <article class="card" data-reveal="true">
-              <h2 style="margin-top:0;">Chatbot financeiro</h2>
-              <p style="color:var(--text-muted);">
-                Assistente dock lateral com input natural. Prompt base garante LGPD e confirmações antes de executar ações.
-              </p>
-              <div class="toast" style="margin-top:1.5rem;">
+          <div class="grid grid--2">
+            <article class="card">
+              <span class="pill">Assistente com IA</span>
+              <h2 style="margin:0;">Converse e execute ações</h2>
+              <div class="toast" style="margin:1rem 0;">
                 <span class="toast__icon">&#129302;</span>
                 <div>
-                  <p style="margin:0;color:var(--text);font-weight:600;">“Posso gastar mais em lazer este mês?”</p>
-                  <p style="margin:0;color:var(--text-muted);">Resposta: Com sua média atual, recomendo limitar a R&#36; 150. Quer criar alerta?</p>
+                  <strong>Você:</strong> “Adicionar pagamento de aluguel para dia 05?”<br />
+                  <strong>Assistente:</strong> “Agendado. Deseja ativar Pix Automático agora?”
                 </div>
               </div>
-              <div class="hero__cta" style="margin-top:1.5rem;">
-                <button class="btn btn--primary" type="button">Agendar pagamento agora</button>
-                <button class="btn btn--ghost" type="button">Criar meta</button>
+              <div class="hero__actions">
+                <button class="btn btn--primary" type="button">Agendar pagamento</button>
+                <button class="btn btn--ghost" type="button">Criar nova meta</button>
                 <button class="btn btn--ghost" type="button">Ajustar orçamento</button>
               </div>
-            </article>
-            <article class="card" data-reveal="true">
-              <h2 style="margin-top:0;">Metas e reservas</h2>
-              <p style="color:var(--text-muted);">
-                Defina objetivos, escolha porcentagem &#47; valor fixo e acompanhe o prazo estimado com animações --dur-med.
+              <p class="section__subtitle">
+                Prompt base no suporte define tom, LGPD e ações disponíveis (create_scheduled_payment, enable_pix_auto, etc.).
               </p>
-              <div class="stacked" style="margin-top:1.5rem;">
-                <div>
-                  <strong>Reserva emergência</strong>
-                  <p style="color:var(--text-muted);margin:0;">R&#36; 8.740 de R&#36; 12.000 (73&#37;).</p>
-                  <div class="progress-track"><span class="progress-bar" style="width:73%;"></span></div>
-                </div>
-                <div>
-                  <strong>Férias familiares</strong>
-                  <p style="color:var(--text-muted);margin:0;">R&#36; 1.950 de R&#36; 5.000 (39&#37;).</p>
-                  <div class="progress-track"><span class="progress-bar" style="width:39%;"></span></div>
-                </div>
-                <div>
-                  <strong>Equipamentos</strong>
-                  <p style="color:var(--text-muted);margin:0;">R&#36; 3.500 de R&#36; 6.500 (54&#37;).</p>
-                  <div class="progress-track"><span class="progress-bar" style="width:54%;"></span></div>
-                </div>
+            </article>
+            <article class="card">
+              <span class="pill">Metas e reservas</span>
+              <h2 style="margin:0;">Acompanhe seus objetivos</h2>
+              <div class="list">
+                <li>
+                  <span class="list__icon">&#9989;</span>
+                  Reserva de emergência — R&#36; 8.740 de R&#36; 12.000 (73&#37;). <div class="progress"><span style="width:73%;"></span></div>
+                </li>
+                <li>
+                  <span class="list__icon">&#9989;</span>
+                  Férias familiares — R&#36; 1.950 de R&#36; 5.000 (39&#37;). <div class="progress"><span style="width:39%;"></span></div>
+                </li>
+                <li>
+                  <span class="list__icon">&#9989;</span>
+                  Equipamentos — R&#36; 3.500 de R&#36; 6.500 (54&#37;). <div class="progress"><span style="width:54%;"></span></div>
+                </li>
               </div>
+              <p class="section__subtitle">
+                Cada atualização dispara snackbar com aria-live, inspirado no toast de Slack e Shopify, respeitando prefers-reduced-motion.
+              </p>
             </article>
           </div>
         </section>
 
+        <!-- Configurações -->
         <section class="section" style="padding-top:0;">
-          <article class="card" data-reveal="true">
-            <h2 style="margin-top:0;">Configurações</h2>
+          <article class="card">
+            <span class="pill">Administração</span>
+            <h2 style="margin:0;">Configurações e segurança</h2>
             <div class="grid grid--3" style="margin-top:1.5rem;">
               <div>
                 <h3>Contas conectadas</h3>
-                <p style="color:var(--text-muted);">
-                  Gerencie bancos, cartões e carteiras. Revogue consentimento com um clique e consulte logs de acesso.
+                <p class="section__subtitle">
+                  Gerencie bancos, cartões e carteiras. Revogue consentimento quando quiser com log registrado.
                 </p>
               </div>
               <div>
                 <h3>Notificações</h3>
-                <p style="color:var(--text-muted);">
-                  Personalize e-mail, WhatsApp e push (app em breve). Segmentação por categorias e metas.
+                <p class="section__subtitle">
+                  Escolha e-mail, push e WhatsApp. Buffer similar ao Slack Huddles para alertas em tempo real.
                 </p>
               </div>
               <div>
                 <h3>Planos e dados</h3>
-                <p style="color:var(--text-muted);">
-                  Faça upgrade/downgrade, exporte transações e solicite exclusão de dados conforme LGPD.
+                <p class="section__subtitle">
+                  Upgrade/downgrade em 1 clique, exportação CSV/JSON e exclusão total conforme LGPD.
                 </p>
               </div>
             </div>
@@ -253,8 +233,8 @@
       <footer class="footer">
         <div class="container">
           <div class="footer__bottom">
-            <span>Dashboard em beta fechado. Quer participar?</span>
-            <a href="cadastro.html" style="color:var(--primary);">Solicitar acesso</a>
+            <span>Dashboard em beta fechado. Deseja participar?</span>
+            <a href="cadastro.html" style="color:var(--color-primary);">Solicitar acesso</a>
           </div>
         </div>
       </footer>
