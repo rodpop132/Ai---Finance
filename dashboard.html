@@ -30,24 +30,25 @@
       </header>
 
       <main class="container" style="padding:clamp(4rem,6vw,5rem) 0;">
-        <div class="section__header">
-          <span class="badge">Dashboard inspirado em Slack, Shopify e Asana</span>
-          <h1 class="section__title">Visão única do seu fluxo financeiro, com automações e IA</h1>
+        <div class="section__header reveal">
+          <span class="badge">Visão ao estilo Slack + Shopify + Asana</span>
+          <h1 class="section__title">Dashboard inteligente com automações prontas</h1>
           <p class="section__subtitle">
-            Cards, gráficos, calendário drag & drop e assistente lateral. Estrutura modular pronta para ser implementada em React/Next.js.
+            Cards dinâmicos, calendário drag & drop, chatbot proativo e metas automatizadas. Estrutura ideal para Next.js + shadcn/ui + Framer Motion.
           </p>
         </div>
 
-        <!-- Cards de resumo -->
+        <!-- Resumo financeiro -->
         <div class="dashboard-grid">
-          <article class="dashboard-card">
+          <article class="dashboard-card reveal">
             <h2 class="dashboard-card__title">Saldo consolidado</h2>
             <span class="value">R&#36; 18.540</span>
             <p class="section__subtitle">
-              Dados via Open Finance de 3 bancos + 2 cartões. Atualização automática a cada hora, com logs de consentimento.
+              Dados sincronizados via Open Finance (3 bancos + 2 cartões). Logs de consentimento e auditoria sempre disponíveis.
             </p>
+            <div class="ticker"><strong>+12%</strong> em relação ao mês anterior</div>
           </article>
-          <article class="dashboard-card">
+          <article class="dashboard-card reveal reveal--delay">
             <h2 class="dashboard-card__title">Pagamentos agendados (7 dias)</h2>
             <span class="value">R&#36; 1.094,80</span>
             <table class="table" aria-label="Pagamentos agendados">
@@ -81,21 +82,21 @@
               </tbody>
             </table>
           </article>
-          <article class="dashboard-card">
+          <article class="dashboard-card reveal">
             <h2 class="dashboard-card__title">Reserva acumulada</h2>
             <span class="value">R&#36; 8.740</span>
             <p class="section__subtitle">
-              Meta emergência em 73&#37;. IA recomenda aporte extra de R&#36; 420 este mês para atingir o objetivo 1 mês antes.
+              Meta emergência 73% completa. A IA sugere aporte extra de R&#36; 420 para antecipar a meta em 30 dias.
             </p>
             <div class="progress"><span style="width:73%;"></span></div>
           </article>
-          <article class="dashboard-card">
+          <article class="dashboard-card reveal reveal--delay">
             <h2 class="dashboard-card__title">Economia sugerida pela IA</h2>
             <span class="value">R&#36; 420</span>
             <div class="toast">
               <span class="toast__icon">&#128161;</span>
               <p class="section__subtitle" style="margin:0;">
-                “Gastos com alimentação subiram 20&#37;. Reduza entregas em R&#36; 150 e renegocie assinatura premium não utilizada.”
+                “Gastos com alimentação subiram 20%. Reduza entregas em R&#36; 150 e renegocie assinatura premium não usada.”
               </p>
             </div>
           </article>
@@ -104,17 +105,17 @@
         <!-- Visualizações -->
         <section class="section" style="padding-top:3rem;">
           <div class="grid grid--2">
-            <article class="card">
-              <span class="pill">Insights visuais</span>
-              <h2 style="margin:0;">Gráficos de entradas e saídas</h2>
+            <article class="card reveal">
+              <span class="pill">Gráficos animados</span>
+              <h2 style="margin:0;">Evolução de entradas e saídas</h2>
               <p class="section__subtitle">
-                Utilize área + barras com tooltips (“Você gastou 20% a mais em marketing”). Segue placeholder para implementação no front-end.
+                Combine área + barras com tooltips (“Você gastou 20% a mais em marketing”). Adicione animação Framer Motion reveal e legenda interativa.
               </p>
               <div style="border:1px dashed rgba(40,48,72,0.8);border-radius:var(--radius-md);padding:2rem;text-align:center;">
-                <p class="section__subtitle" style="margin:0;">[Insira aqui seu gráfico com Framer Motion ou Recharts]</p>
+                <p class="section__subtitle" style="margin:0;">[Renderize seus gráficos com Recharts / ApexCharts]</p>
               </div>
             </article>
-            <article class="card">
+            <article class="card reveal reveal--delay">
               <span class="pill">Calendário drag & drop</span>
               <h2 style="margin:0;">Organize sua semana</h2>
               <div class="calendar" style="margin-top:1rem;">
@@ -149,7 +150,7 @@
                 </div>
               </div>
               <p class="section__subtitle">
-                Use dnd-kit para drag & drop. Ao soltar, aplique outline primário e bounce leve (ease 0.25s). Tooltip: “Arraste para reorganizar sua semana”.
+                Utilize dnd-kit para drag & drop. Ao soltar, destaque célula com outline primário e bounce leve (0,22s).
               </p>
             </article>
           </div>
@@ -158,14 +159,14 @@
         <!-- Assistente e Metas -->
         <section class="section" style="padding-top:0;">
           <div class="grid grid--2">
-            <article class="card">
+            <article class="card reveal">
               <span class="pill">Assistente com IA</span>
               <h2 style="margin:0;">Converse e execute ações</h2>
               <div class="toast" style="margin:1rem 0;">
                 <span class="toast__icon">&#129302;</span>
                 <div>
-                  <strong>Você:</strong> “Adicionar pagamento de aluguel para dia 05?”<br />
-                  <strong>Assistente:</strong> “Agendado. Deseja ativar Pix Automático agora?”
+                  <strong>Você:</strong> “Adicionar aluguel para dia 05?”<br />
+                  <strong>Assistente:</strong> “Agendei. Deseja ativar Pix Automático imediatamente?”
                 </div>
               </div>
               <div class="hero__actions">
@@ -174,28 +175,28 @@
                 <button class="btn btn--ghost" type="button">Ajustar orçamento</button>
               </div>
               <p class="section__subtitle">
-                Prompt base no suporte define tom, LGPD e ações disponíveis (create_scheduled_payment, enable_pix_auto, etc.).
+                Prompt base está em suporte.html. IA responde em tom claro, confirma ações e respeita LGPD.
               </p>
             </article>
-            <article class="card">
+            <article class="card reveal reveal--delay">
               <span class="pill">Metas e reservas</span>
-              <h2 style="margin:0;">Acompanhe seus objetivos</h2>
-              <div class="list">
+              <h2 style="margin:0;">Acompanhe objetivos essenciais</h2>
+              <ul class="list">
                 <li>
                   <span class="list__icon">&#9989;</span>
-                  Reserva de emergência — R&#36; 8.740 de R&#36; 12.000 (73&#37;). <div class="progress"><span style="width:73%;"></span></div>
+                  Reserva emergência — R&#36; 8.740 de R&#36; 12.000 (73%). <div class="progress"><span style="width:73%;"></span></div>
                 </li>
                 <li>
                   <span class="list__icon">&#9989;</span>
-                  Férias familiares — R&#36; 1.950 de R&#36; 5.000 (39&#37;). <div class="progress"><span style="width:39%;"></span></div>
+                  Férias familiares — R&#36; 1.950 de R&#36; 5.000 (39%). <div class="progress"><span style="width:39%;"></span></div>
                 </li>
                 <li>
                   <span class="list__icon">&#9989;</span>
-                  Equipamentos — R&#36; 3.500 de R&#36; 6.500 (54&#37;). <div class="progress"><span style="width:54%;"></span></div>
+                  Equipamentos — R&#36; 3.500 de R&#36; 6.500 (54%). <div class="progress"><span style="width:54%;"></span></div>
                 </li>
-              </div>
+              </ul>
               <p class="section__subtitle">
-                Cada atualização dispara snackbar com aria-live, inspirado no toast de Slack e Shopify, respeitando prefers-reduced-motion.
+                Cada atualização gera snackbar com aria-live e opções de exportar ou converter em automação.
               </p>
             </article>
           </div>
@@ -203,26 +204,26 @@
 
         <!-- Configurações -->
         <section class="section" style="padding-top:0;">
-          <article class="card">
+          <article class="card reveal">
             <span class="pill">Administração</span>
             <h2 style="margin:0;">Configurações e segurança</h2>
             <div class="grid grid--3" style="margin-top:1.5rem;">
               <div>
                 <h3>Contas conectadas</h3>
                 <p class="section__subtitle">
-                  Gerencie bancos, cartões e carteiras. Revogue consentimento quando quiser com log registrado.
+                  Revogue consentimentos, veja histórico de acesso e gerencie múltiplos CNPJs em um só painel.
                 </p>
               </div>
               <div>
-                <h3>Notificações</h3>
+                <h3>Notificações omnicanal</h3>
                 <p class="section__subtitle">
-                  Escolha e-mail, push e WhatsApp. Buffer similar ao Slack Huddles para alertas em tempo real.
+                  Personalize e-mail, WhatsApp e push. Controle horas silenciosas e priorização de alertas.
                 </p>
               </div>
               <div>
-                <h3>Planos e dados</h3>
+                <h3>Planos, dados e LGPD</h3>
                 <p class="section__subtitle">
-                  Upgrade/downgrade em 1 clique, exportação CSV/JSON e exclusão total conforme LGPD.
+                  Upgrade/downgrade instantâneo, exportação CSV/JSON e exclusão completa em até 7 dias úteis.
                 </p>
               </div>
             </div>
@@ -233,7 +234,7 @@
       <footer class="footer">
         <div class="container">
           <div class="footer__bottom">
-            <span>Dashboard em beta fechado. Deseja participar?</span>
+            <span>Dashboard em beta fechado. Quer participar?</span>
             <a href="cadastro.html" style="color:var(--color-primary);">Solicitar acesso</a>
           </div>
         </div>
