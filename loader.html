@@ -15,18 +15,43 @@
   <body>
     <div class="loader page">
       <div class="loader__panel" role="status" aria-live="polite">
-        <div class="avatar-ring">
-          <span>&#128274;</span>
-        </div>
-        <h1 class="section__title" style="font-size:1.8rem;">Carregando seus dados com segurança…</h1>
-        <p class="section__subtitle">
-          Conectamos Open Finance, ativamos Pix Automático e preparamos recomendações da IA. Este processo leva poucos segundos.
-        </p>
-        <div class="loader__bar"><span></span></div>
-        <div class="status-list">
-          <span class="status">Conectando à Open Finance</span>
-          <span class="status">Analisando suas despesas com IA</span>
-          <span class="status status--done">Pronto! Abrindo seu dashboard</span>
+        <div class="loader__layout">
+          <aside class="loader__aside">
+            <div class="avatar-ring">
+              <span>&#128274;</span>
+            </div>
+            <h1 class="section__title" style="font-size:1.8rem;margin:0;">Carregando seus dados com segurança…</h1>
+            <p class="section__subtitle">
+              Configurando conexões, sincronizando transações e preparando recomendações personalizadas.
+            </p>
+            <div class="loader__bar"><span></span></div>
+            <ul class="checklist">
+              <li>OAuth seguro com consentimento LGPD</li>
+              <li>Criptografia ponta a ponta ativada</li>
+              <li>Logs de auditoria sendo inicializados</li>
+            </ul>
+          </aside>
+          <section class="loader__content">
+            <div class="timeline">
+              <div class="timeline__item timeline__item--done">
+                <strong>Passo 1 — Conectando à Open Finance</strong>
+                <p class="section__subtitle" style="margin:0;">Validando credenciais e tokens de acesso bancário.</p>
+              </div>
+              <div class="timeline__item">
+                <strong>Passo 2 — Sincronizando Pix Automático</strong>
+                <p class="section__subtitle" style="margin:0;">Buscando mandatos existentes e agendamentos futuros.</p>
+              </div>
+              <div class="timeline__item">
+                <strong>Passo 3 — Preparando insights de IA</strong>
+                <p class="section__subtitle" style="margin:0;">Analisando gastos, metas e oportunidades de economia.</p>
+              </div>
+            </div>
+            <div class="status-list">
+              <span class="status status--done">Conexões seguras estabelecidas</span>
+              <span class="status">Sincronizando suas despesas</span>
+              <span class="status">Gerando recomendações inteligentes</span>
+            </div>
+          </section>
         </div>
       </div>
       <noscript>
